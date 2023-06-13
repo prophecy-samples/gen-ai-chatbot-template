@@ -53,42 +53,52 @@
     "sourcePort" : "eOuBqU2OCACHv-rTmjBFK$$6eIu4v4NeF9TibxS-mjQM",
     "target" : "Lfr-AkCYApvchMfscEZZA$$YgbXQHVoJguiMo2I6Naw3",
     "targetPort" : "PAHwi8oo9nzkqpGbGY7k9$$FSeap7hDtEscPwVVSJ-4I"
+  }, {
+    "id" : "SUaAMlG0kxZWHUPVHiz-L$$ZQM7VMxZkKlRrYXikwx8m",
+    "source" : "Lfr-AkCYApvchMfscEZZA$$YgbXQHVoJguiMo2I6Naw3",
+    "sourcePort" : "eskpltVNLamMteSIjrtqj$$kAVDsPjYkOAQZRaK3fBSf",
+    "target" : "uFuTmJTk4ojbh2cMI4-Ta$$0wIBnEWjGWjPj46F4F-NK",
+    "targetPort" : "V9lHnbUJYAGO-MnK_M07B$$2E-0IuiEBaHVD-QO7S-Na"
+  }, {
+    "id" : "rIFM-X5QIcSa1tnrxYyLL$$cq5ds1TQWDD3qV01_sBpb",
+    "source" : "KQUutjdomgo8Y5F93g6TI$$vDeXXS8Bk4eorUana84Fd",
+    "sourcePort" : "jHBdSn1z6ylaViGJt0MqO$$Qu5pXDgOdxU0R08B58m71",
+    "target" : "YWp1izOE6MxSoEgLL1pPw$$d2GMTOf7gs1dqtQAeh5gU",
+    "targetPort" : "IWidGeMaIMdSp5wfejxe_$$33NpMaNxK2Rks9BMvBl7g"
+  }, {
+    "id" : "xiOMHyW98-BooqVCTwxLt$$NpAwlIbuqmuH3MBIM59M8",
+    "source" : "uFuTmJTk4ojbh2cMI4-Ta$$0wIBnEWjGWjPj46F4F-NK",
+    "sourcePort" : "3aTt3YnVKsAeDWQwa35BV$$QusEt49BpJ5OZEtRYKXiV",
+    "target" : "keSWTFvcdGeDpt5KfIKsY$$h9PxPzMvvX3ai6eeVtG0G",
+    "targetPort" : "bQViezFsw9pX-EoBwIwAz$$V-EWka1tMG4id-PYm4AJh"
+  }, {
+    "id" : "m1W-y2xg1u6dEJYiMHPWB$$XQHzmT6H4_hkDzVIBr8iF",
+    "source" : "YWp1izOE6MxSoEgLL1pPw$$d2GMTOf7gs1dqtQAeh5gU",
+    "sourcePort" : "PJ0J4mj655pWVZWzfueIu$$D1KyAJTZTDQXPQoEx1jfB",
+    "target" : "jtC_7DhOWAZn4V9PoL47h$$emlHjxtPEXgIy6ZL6Mvjc",
+    "targetPort" : "CWI2AMGYgAFjoCZikulxL$$yQnVRby-wTfOjOouNzu5v"
+  }, {
+    "id" : "QDIqVZsUrLx0KzZ4aPA6s$$dq1xwLYUmjALwCa8-QPwI",
+    "source" : "jtC_7DhOWAZn4V9PoL47h$$emlHjxtPEXgIy6ZL6Mvjc",
+    "sourcePort" : "hi3H2ipkDQf1X6BvwdvNX$$9wjnYMyRa1MVgyFr0LW5x",
+    "target" : "yYYYXZbfeUrqZ7lCie4Xw$$jNiTFP7N4pcGIHbZ4_ugK",
+    "targetPort" : "qUzgk5aPqeNHaRf-3Im1-$$PH2hU4XWhz6o__mFLGaZn"
+  }, {
+    "id" : "iC3WZP0bYkrVEujMrCIOo",
+    "source" : "keSWTFvcdGeDpt5KfIKsY$$h9PxPzMvvX3ai6eeVtG0G",
+    "sourcePort" : "vLXgMp7kwWEjHtgWNFab6$$ng5DSNOBJ8V3K6B7hwjZO",
+    "target" : "YWp1izOE6MxSoEgLL1pPw$$d2GMTOf7gs1dqtQAeh5gU",
+    "targetPort" : "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH"
   } ],
   "processes" : {
-    "U-lC_dNhzQaQlvCkjN_Wd$$2pVjg-KnXiU3z6Er0HlFx" : {
-      "id" : "U-lC_dNhzQaQlvCkjN_Wd$$2pVjg-KnXiU3z6Er0HlFx",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "question_seed",
-        "slug" : "question_seed",
-        "x" : -980,
-        "y" : 0,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "eOuBqU2OCACHv-rTmjBFK$$6eIu4v4NeF9TibxS-mjQM",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/question_seed"
-      }
-    },
     "Lfr-AkCYApvchMfscEZZA$$YgbXQHVoJguiMo2I6Naw3" : {
       "id" : "Lfr-AkCYApvchMfscEZZA$$YgbXQHVoJguiMo2I6Naw3",
       "component" : "OpenAI",
       "metadata" : {
         "label" : "vectorize_question",
         "slug" : "vectorize_question",
-        "x" : -760,
-        "y" : 0,
+        "x" : -1940,
+        "y" : -400,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -167,6 +177,744 @@
         "qa_context_column_name" : null,
         "credential_db_key" : "token",
         "limit" : "10"
+      }
+    },
+    "yYYYXZbfeUrqZ7lCie4Xw$$jNiTFP7N4pcGIHbZ4_ugK" : {
+      "id" : "yYYYXZbfeUrqZ7lCie4Xw$$jNiTFP7N4pcGIHbZ4_ugK",
+      "component" : "OpenAI",
+      "metadata" : {
+        "label" : "answer_question",
+        "slug" : "answer_question",
+        "x" : -980,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qUzgk5aPqeNHaRf-3Im1-$$PH2hU4XWhz6o__mFLGaZn",
+          "slug" : "Aggregate_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "context",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "yfEkI6MaMT1Xq5GCAGW2d$$23F1V9sHLCeCuNhfZWS9y",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "context",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_answer",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "choices",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : "string",
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "error",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "qa_query_column_name" : "input",
+        "credential_type" : "databricks",
+        "order_by_column" : null,
+        "credential_db_scope" : "open_ai",
+        "credential_manual_token" : "",
+        "operation" : "answer_question",
+        "embed_text_column_name" : null,
+        "qa_context_column_name" : "context",
+        "credential_db_key" : "token",
+        "limit" : "10"
+      }
+    },
+    "keSWTFvcdGeDpt5KfIKsY$$h9PxPzMvvX3ai6eeVtG0G" : {
+      "id" : "keSWTFvcdGeDpt5KfIKsY$$h9PxPzMvvX3ai6eeVtG0G",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "explode_matches",
+        "slug" : "explode_matches",
+        "x" : -1540,
+        "y" : -400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "bQViezFsw9pX-EoBwIwAz$$V-EWka1tMG4id-PYm4AJh",
+          "slug" : "PineconeLookup_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "openai_embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "pinecone_matches",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "id",
+                    "type" : "string",
+                    "nullable" : false,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "score",
+                    "type" : "float",
+                    "nullable" : false,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : false
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "pinecone_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "vLXgMp7kwWEjHtgWNFab6$$ng5DSNOBJ8V3K6B7hwjZO",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "explodedColsNewName" : [ {
+          "originalColToExplode" : "pinecone_matches",
+          "updatedColToExplode" : "pinecone_matches",
+          "colNameAfterExplode" : "pinecone_matches"
+        } ],
+        "fsExpressions" : [ {
+          "exploded" : "✓",
+          "flattenedExpression" : "pinecone_matches",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "pinecone_matches"
+          },
+          "targetTokens" : [ "pinecone_matches" ],
+          "target" : "pinecone_matches"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "input",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "input"
+          },
+          "targetTokens" : [ "input" ],
+          "target" : "input"
+        } ],
+        "columnsSelector" : [ "bQViezFsw9pX-EoBwIwAz$$V-EWka1tMG4id-PYm4AJh##pinecone_matches", "bQViezFsw9pX-EoBwIwAz$$V-EWka1tMG4id-PYm4AJh##input" ],
+        "explodeColumns" : [ ],
+        "delimiter" : "-"
+      }
+    },
+    "KQUutjdomgo8Y5F93g6TI$$vDeXXS8Bk4eorUana84Fd" : {
+      "id" : "KQUutjdomgo8Y5F93g6TI$$vDeXXS8Bk4eorUana84Fd",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "web_silver_content_vectorized",
+        "slug" : "web_silver_content_vectorized",
+        "x" : -1540,
+        "y" : -140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "jHBdSn1z6ylaViGJt0MqO$$Qu5pXDgOdxU0R08B58m71",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_silver_content_vectorized"
+      }
+    },
+    "jtC_7DhOWAZn4V9PoL47h$$emlHjxtPEXgIy6ZL6Mvjc" : {
+      "id" : "jtC_7DhOWAZn4V9PoL47h$$emlHjxtPEXgIy6ZL6Mvjc",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "collect_context",
+        "slug" : "collect_context",
+        "x" : -1160,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "CWI2AMGYgAFjoCZikulxL$$yQnVRby-wTfOjOouNzu5v",
+          "slug" : "Join_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "pinecone_matches",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "score",
+                  "type" : "float",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "hi3H2ipkDQf1X6BvwdvNX$$9wjnYMyRa1MVgyFr0LW5x",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "context",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "array_join(collect_list(content_chunk), '; ')"
+          },
+          "description" : "",
+          "_row_id" : "c_39"
+        }, {
+          "target" : "input",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(input)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "CWI2AMGYgAFjoCZikulxL$$yQnVRby-wTfOjOouNzu5v##content_chunk", "CWI2AMGYgAFjoCZikulxL$$yQnVRby-wTfOjOouNzu5v##input" ],
+        "groupBy" : [ ]
+      }
+    },
+    "U-lC_dNhzQaQlvCkjN_Wd$$2pVjg-KnXiU3z6Er0HlFx" : {
+      "id" : "U-lC_dNhzQaQlvCkjN_Wd$$2pVjg-KnXiU3z6Er0HlFx",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "question_seed",
+        "slug" : "question_seed",
+        "x" : -2180,
+        "y" : -400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "eOuBqU2OCACHv-rTmjBFK$$6eIu4v4NeF9TibxS-mjQM",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/question_seed"
+      }
+    },
+    "uFuTmJTk4ojbh2cMI4-Ta$$0wIBnEWjGWjPj46F4F-NK" : {
+      "id" : "uFuTmJTk4ojbh2cMI4-Ta$$0wIBnEWjGWjPj46F4F-NK",
+      "component" : "PineconeLookup",
+      "metadata" : {
+        "label" : "vector_lookup",
+        "slug" : "vector_lookup",
+        "x" : -1720,
+        "y" : -400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "V9lHnbUJYAGO-MnK_M07B$$2E-0IuiEBaHVD-QO7S-Na",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "openai_embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "3aTt3YnVKsAeDWQwa35BV$$QusEt49BpJ5OZEtRYKXiV",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "openai_embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "pinecone_matches",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "id",
+                    "type" : "string",
+                    "nullable" : false,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "score",
+                    "type" : "float",
+                    "nullable" : false,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : false
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "pinecone_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "index_name" : "all-vectors",
+        "credential_type" : "databricks",
+        "credential_db_scope" : "pinecone",
+        "environment" : "us-east-1-aws",
+        "credential_db_key" : "token",
+        "vector_column_name" : "openai_embedding",
+        "top_k" : 3,
+        "credential_manual_api_key" : ""
+      }
+    },
+    "YWp1izOE6MxSoEgLL1pPw$$d2GMTOf7gs1dqtQAeh5gU" : {
+      "id" : "YWp1izOE6MxSoEgLL1pPw$$d2GMTOf7gs1dqtQAeh5gU",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "with_original_content",
+        "slug" : "with_original_content",
+        "x" : -1340,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "pinecone_matches",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "score",
+                  "type" : "float",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "IWidGeMaIMdSp5wfejxe_$$33NpMaNxK2Rks9BMvBl7g",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "PJ0J4mj655pWVZWzfueIu$$D1KyAJTZTDQXPQoEx1jfB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.pinecone_matches.id = in1.id"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ ],
+        "hints" : [ {
+          "id" : "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "IWidGeMaIMdSp5wfejxe_$$33NpMaNxK2Rks9BMvBl7g",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "conditions",
+        "columnsSelector" : [ "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH##pinecone_matches.id", "IWidGeMaIMdSp5wfejxe_$$33NpMaNxK2Rks9BMvBl7g##id", "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH##pinecone_matches" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
       }
     }
   },

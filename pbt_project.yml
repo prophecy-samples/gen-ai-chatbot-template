@@ -38,7 +38,7 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 02:05:35'
-    modifiedAt: '2023-06-13 05:19:25'
+    modifiedAt: '2023-06-13 07:03:37'
     datasets:
       inputs:
       - datasets/web_bronze_content
@@ -70,11 +70,29 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 05:00:18'
-    modifiedAt: '2023-06-13 05:35:00'
+    modifiedAt: '2023-06-13 07:11:54'
     datasets:
       inputs:
       - datasets/question_seed
+      - datasets/web_silver_content_vectorized
       outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/chatbot_live:
+    name: chatbot_live
+    description: ''
+    author: maciej@prophecy.io
+    mode: stream
+    artefactID: ''
+    language: python
+    createdAt: '2023-06-13 07:12:50'
+    modifiedAt: '2023-06-13 08:23:39'
+    datasets:
+      inputs:
+      - datasets/bot_messages
+      - datasets/web_silver_content_vectorized
+      outputs:
+      - datasets/bot_messages
     subgraphs: []
     dependencies: {}
 datasets:
@@ -143,7 +161,7 @@ datasets:
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 04:20:06'
-    modifiedAt: '2023-06-13 04:38:42'
+    modifiedAt: '2023-06-13 07:04:19'
     mode: batch
     physicalDatasets:
       dev_product:
@@ -183,12 +201,27 @@ datasets:
         author: maciej@prophecy.io
         createdAt: '2023-06-13 05:18:30'
         modifiedAt: '2023-06-13 05:18:30'
+  datasets/bot_messages:
+    name: bot_messages
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-13 07:16:03'
+    modifiedAt: '2023-06-13 07:55:59'
+    mode: stream
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: File
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-13 07:16:03'
+        modifiedAt: '2023-06-13 07:16:03'
 templates: {}
 jobs: {}
 functions:
   author: null
   createdAt: '2023-06-13 00:50:07'
-  modifiedAt: '2023-06-13 05:35:46'
+  modifiedAt: '2023-06-13 08:23:39'
   gems: {}
   udfs:
     udfs/scrape_text:

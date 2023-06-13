@@ -235,7 +235,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -364,7 +364,7 @@
               }
             }, {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -430,7 +430,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -600,7 +600,7 @@
               }
             }, {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -687,7 +687,7 @@
               }
             }, {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
