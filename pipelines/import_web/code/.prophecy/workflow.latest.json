@@ -1,0 +1,375 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "2",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "maciej_prophecy.genaichatbottemplate.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "import_web",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "CuG9Yrt80oEUTFKAjmcmY$$ZjreDw5fo9rqJ25XQmVwA",
+    "source" : "4tiINsug4FSc4U2BYCTPs$$JSN2q-mocCReyymb6lvKv",
+    "sourcePort" : "y_4CfHJtaXEG3Usfwcj_N$$5aR6qEDuf1rY9pLriEaZk",
+    "target" : "coDRRNpMLPQ55qNsrEfVk$$TZZTWrTLFf0c21YDV1Q4A",
+    "targetPort" : "1g4__Tkms5M3d8gTrKhkl$$idWx6f5n8Z10VRhheaI3w"
+  }, {
+    "id" : "9nTHb2iTmRplBiLVwpTBO$$TUJqEMY4uCsRg_2K0k1kZ",
+    "source" : "DmuIiW1t6OteR_HLY_Q8n$$ChDJ1nabibu3in9xARiUP",
+    "sourcePort" : "Q5DjZxtNvA247wYBzC259$$MpuCNxZwHa9UhgqE2I0EX",
+    "target" : "4tiINsug4FSc4U2BYCTPs$$JSN2q-mocCReyymb6lvKv",
+    "targetPort" : "c_u0zzH1lqj5_3dJxnAJy$$NxpV1xQEXMh7xgpL2MlbK"
+  }, {
+    "id" : "928C5sUDLK6ehkDDwdlSj$$5YccxaQ8Xfkr51-cQXO5t",
+    "source" : "dRS7jjG6jz_Mof9F-b21x$$201c6R2P0QPSssSKa1OGM",
+    "sourcePort" : "D56q1OR_XpjSSfoBL_Tb5$$YpKB6Aolq0CIYMEcze-bz",
+    "target" : "tq4ZUUVw0wrWzHl33RNIZ$$SVExE8XvTnFm9xCEYKP1F",
+    "targetPort" : "54R_NSziJDomvzX14UTTk$$NAVIGA6rPnFPnek3zTwik"
+  }, {
+    "id" : "PljCUbv8jzjOHI9IYBsrj$$0leCKkMqdaUkX5pR01-fo",
+    "source" : "tq4ZUUVw0wrWzHl33RNIZ$$SVExE8XvTnFm9xCEYKP1F",
+    "sourcePort" : "HRZFlSlk2clP6tEWyNUXL$$a-yGAp_nkrWrdzm-zFqtl",
+    "target" : "xi7n1SGfB9KZRbklnSz8Q$$1r97C31hE5J1JaujAl5aL",
+    "targetPort" : "DVYhaqO3C3LJeTHpjSH4Y$$hoiwfnL-lzWtHE8933uF4"
+  } ],
+  "processes" : {
+    "xi7n1SGfB9KZRbklnSz8Q$$1r97C31hE5J1JaujAl5aL" : {
+      "id" : "xi7n1SGfB9KZRbklnSz8Q$$1r97C31hE5J1JaujAl5aL",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "web_bronze_content",
+        "slug" : "web_bronze_content",
+        "x" : -800,
+        "y" : -380,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "DVYhaqO3C3LJeTHpjSH4Y$$hoiwfnL-lzWtHE8933uF4",
+          "slug" : "scrape_pages",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_content"
+      }
+    },
+    "dRS7jjG6jz_Mof9F-b21x$$201c6R2P0QPSssSKa1OGM" : {
+      "id" : "dRS7jjG6jz_Mof9F-b21x$$201c6R2P0QPSssSKa1OGM",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "web_bronze_sitemap",
+        "slug" : "web_bronze_sitemap",
+        "x" : -1220,
+        "y" : -380,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "D56q1OR_XpjSSfoBL_Tb5$$YpKB6Aolq0CIYMEcze-bz",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_sitemap"
+      }
+    },
+    "tq4ZUUVw0wrWzHl33RNIZ$$SVExE8XvTnFm9xCEYKP1F" : {
+      "id" : "tq4ZUUVw0wrWzHl33RNIZ$$SVExE8XvTnFm9xCEYKP1F",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "scrape_pages",
+        "slug" : "scrape_pages",
+        "x" : -1020,
+        "y" : -380,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "54R_NSziJDomvzX14UTTk$$NAVIGA6rPnFPnek3zTwik",
+          "slug" : "web_bronze_sitemap",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "changefreq",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "loc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "priority",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "HRZFlSlk2clP6tEWyNUXL$$a-yGAp_nkrWrdzm-zFqtl",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "url",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "loc"
+          },
+          "description" : ""
+        }, {
+          "target" : "content",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "scrape_text(loc)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "54R_NSziJDomvzX14UTTk$$NAVIGA6rPnFPnek3zTwik##loc" ]
+      }
+    },
+    "4tiINsug4FSc4U2BYCTPs$$JSN2q-mocCReyymb6lvKv" : {
+      "id" : "4tiINsug4FSc4U2BYCTPs$$JSN2q-mocCReyymb6lvKv",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "text_only",
+        "slug" : "text_only",
+        "x" : -1020,
+        "y" : -560,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "c_u0zzH1lqj5_3dJxnAJy$$NxpV1xQEXMh7xgpL2MlbK",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "y_4CfHJtaXEG3Usfwcj_N$$5aR6qEDuf1rY9pLriEaZk",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "content"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "c_u0zzH1lqj5_3dJxnAJy$$NxpV1xQEXMh7xgpL2MlbK##content" ]
+      }
+    },
+    "coDRRNpMLPQ55qNsrEfVk$$TZZTWrTLFf0c21YDV1Q4A" : {
+      "id" : "coDRRNpMLPQ55qNsrEfVk$$TZZTWrTLFf0c21YDV1Q4A",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "web_bronze_sitemap_raw",
+        "slug" : "web_bronze_sitemap_raw",
+        "x" : -800,
+        "y" : -560,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "1g4__Tkms5M3d8gTrKhkl$$idWx6f5n8Z10VRhheaI3w",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_sitemap_raw"
+      }
+    },
+    "DmuIiW1t6OteR_HLY_Q8n$$ChDJ1nabibu3in9xARiUP" : {
+      "id" : "DmuIiW1t6OteR_HLY_Q8n$$ChDJ1nabibu3in9xARiUP",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "web_bronze_url",
+        "slug" : "web_bronze_url",
+        "x" : -1220,
+        "y" : -560,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Q5DjZxtNvA247wYBzC259$$MpuCNxZwHa9UhgqE2I0EX",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_url"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

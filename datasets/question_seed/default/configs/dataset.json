@@ -1,0 +1,1 @@
+{"format":"seed","description":"","column_name":"input","schema":{"type":"struct","fields":[{"name":"input","type":"string","nullable":true,"metadata":{"description":"","mappings":[],"tags":[]}}]},"value":"Does Prophecy support on-premise environments? ","datasetType":"File"}

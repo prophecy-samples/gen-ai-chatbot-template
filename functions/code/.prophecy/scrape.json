@@ -1,0 +1,1 @@
+{"initCode":"","code":"@udf(returnType = StringType())\ndef scrape_text(url: str):\n    import requests\n    from bs4 import BeautifulSoup\n\n    response = requests.get(url)\n    soup = BeautifulSoup(response.text, 'html.parser')\n    text = soup.get_text(' ')\n\n    return text"}

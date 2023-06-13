@@ -1,0 +1,885 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "2",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "maciej_prophecy.genaichatbottemplate.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "web_vectorize",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "eHGuf20NsSRtS7gvahHyG$$yRS4p1BcsBfuCn-BDziCD",
+    "source" : "7cXG5RvQdO6aRXdSLYQZ4$$qKbLiZXWw0p5NbdD7Ro7H",
+    "sourcePort" : "goRQ7CjpS6feBqHmJTZdV$$NSItoKdgZL-sJo6yRJgB3",
+    "target" : "Lj4pkM5iUtkV-9stsCZtC$$u4P_wzw-L_DiEhbXDp4JQ",
+    "targetPort" : "sfihi8VzplK2EYuTK94Fp$$fDeotKi5GvflGKoYxakxt"
+  }, {
+    "id" : "5w-4PGUhREb_5EI78aqfK$$3PiBksW8pEOwV1djA0iSS",
+    "source" : "Lj4pkM5iUtkV-9stsCZtC$$u4P_wzw-L_DiEhbXDp4JQ",
+    "sourcePort" : "6KokGmx-Uo27G1MBoDnuu$$ZNS5u9N3mslekZoXrshdM",
+    "target" : "KDdSh9bbURjS42SmBsj1o$$uafUAcCUXfhuamTjN94Gg",
+    "targetPort" : "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4"
+  }, {
+    "id" : "k-fFY5auW7ozwe-1fsvrr$$aYkfYbAZtn6HiQ_kdrFFY",
+    "source" : "KDdSh9bbURjS42SmBsj1o$$uafUAcCUXfhuamTjN94Gg",
+    "sourcePort" : "BNz6WCfrvLO4I_jFpcQA3$$QjmvNUvQUKIwTQjnevovC",
+    "target" : "x6wo_OvFPQKIJwazK9Sjo$$hw2ZO_1sBcZbOZjU4jscP",
+    "targetPort" : "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki"
+  }, {
+    "id" : "dPxaku9wcqkOCY8wFIHuK$$mAoftzgvMopkotSSBZloK",
+    "source" : "x6wo_OvFPQKIJwazK9Sjo$$hw2ZO_1sBcZbOZjU4jscP",
+    "sourcePort" : "FrSeShafU_Hvduqrzc4Iy$$qwT1cJ7paJiVKhKM2mklX",
+    "target" : "rRnKDPTxDO2KFNpbdVY6r$$l1WeCF_WY8S6pGMAbI8uU",
+    "targetPort" : "qFrZ4QxMX11aOMZM0fnjv$$QmbdSA6qB9w85WYeGboLW"
+  }, {
+    "id" : "LM6-ozxw2XaiPCZ0u8OIX$$6bprmwNZkX1DaVpmlhmyt",
+    "source" : "esrRqdxQBkBoW4GZax0hQ$$gKFSt-YDIrUP8m9VsKDvc",
+    "sourcePort" : "EWvmpDYAiT8mCx5SYskBy$$6zq_tTLYRaiBypWOyy3ac",
+    "target" : "tXodcSbgYBovboel2tEA2$$_LX_7JMoo1z2eVgIW7OsZ",
+    "targetPort" : "svnGJSshNeRWwolMG04Lv$$PamuxgDMeL4aqI-d-oImj"
+  }, {
+    "id" : "f2HuMhAmTroFD2xSyWGoT$$yr0nk2E8gfHUX-fQKiuHN",
+    "source" : "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo",
+    "sourcePort" : "1a0Fv_Sum9UqJJ3PN5HC4$$ZaKzuKNdIpAi-faWQnvaF",
+    "target" : "esrRqdxQBkBoW4GZax0hQ$$gKFSt-YDIrUP8m9VsKDvc",
+    "targetPort" : "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN"
+  }, {
+    "id" : "8WQ21Qw0JyB9jg9rD2qEp$$zdj7OXjOe_sysOhI6r9Jt",
+    "source" : "rRnKDPTxDO2KFNpbdVY6r$$l1WeCF_WY8S6pGMAbI8uU",
+    "sourcePort" : "FTVlohjEZMF05oxeqbdKG$$RdlFXmBCJ2musam7LZ3z6",
+    "target" : "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo",
+    "targetPort" : "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q"
+  }, {
+    "id" : "6N28TDXBSHYSBsz7WmCDy",
+    "source" : "lziWraHTP2o1CVY9bKVb7$$-UQ-X9UItWjz2YDC9f23i",
+    "sourcePort" : "5-sp2EA7rTRBanIb64G1G$$D8U-nkMNjtAjt-if7AsiR",
+    "target" : "tXFUS98cX9nDoXkXA5VXK$$KjsAnwsTr7t2-ylPy0wim",
+    "targetPort" : "-eR_rmc97m2Tx3UHccgT4$$bwsUTmkXcPg4wmf8V9F5R"
+  } ],
+  "processes" : {
+    "lziWraHTP2o1CVY9bKVb7$$-UQ-X9UItWjz2YDC9f23i" : {
+      "id" : "lziWraHTP2o1CVY9bKVb7$$-UQ-X9UItWjz2YDC9f23i",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "web_silver_content_vectorized_read",
+        "slug" : "web_silver_content_vectorized_read",
+        "x" : 120,
+        "y" : 320,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "5-sp2EA7rTRBanIb64G1G$$D8U-nkMNjtAjt-if7AsiR",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_silver_content_vectorized"
+      }
+    },
+    "KDdSh9bbURjS42SmBsj1o$$uafUAcCUXfhuamTjN94Gg" : {
+      "id" : "KDdSh9bbURjS42SmBsj1o$$uafUAcCUXfhuamTjN94Gg",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "FlattenSchema_1",
+        "slug" : "FlattenSchema_1",
+        "x" : 520,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4",
+          "slug" : "TextProcessing_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "result_chunks",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "BNz6WCfrvLO4I_jFpcQA3$$QjmvNUvQUKIwTQjnevovC",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "explodedColsNewName" : [ {
+          "originalColToExplode" : "result_chunks",
+          "updatedColToExplode" : "result_chunks",
+          "colNameAfterExplode" : "result_chunks"
+        } ],
+        "fsExpressions" : [ {
+          "exploded" : "",
+          "flattenedExpression" : "url",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "url"
+          },
+          "targetTokens" : [ "url" ],
+          "target" : "url"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "result_chunks",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "result_chunks"
+          },
+          "targetTokens" : [ "result_chunks" ],
+          "target" : "content_chunk"
+        } ],
+        "columnsSelector" : [ "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##url", "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##result_chunks" ],
+        "explodeColumns" : [ ],
+        "delimiter" : "-"
+      }
+    },
+    "tXFUS98cX9nDoXkXA5VXK$$KjsAnwsTr7t2-ylPy0wim" : {
+      "id" : "tXFUS98cX9nDoXkXA5VXK$$KjsAnwsTr7t2-ylPy0wim",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "all_vectors_silver",
+        "slug" : "all_vectors_silver",
+        "x" : 320,
+        "y" : 320,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-eR_rmc97m2Tx3UHccgT4$$bwsUTmkXcPg4wmf8V9F5R",
+          "slug" : "web_silver_content_vectorized_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/all_vectors_silver"
+      }
+    },
+    "rRnKDPTxDO2KFNpbdVY6r$$l1WeCF_WY8S6pGMAbI8uU" : {
+      "id" : "rRnKDPTxDO2KFNpbdVY6r$$l1WeCF_WY8S6pGMAbI8uU",
+      "component" : "OpenAI",
+      "metadata" : {
+        "label" : "vectorize",
+        "slug" : "vectorize",
+        "x" : 920,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qFrZ4QxMX11aOMZM0fnjv$$QmbdSA6qB9w85WYeGboLW",
+          "slug" : "with_id",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "FTVlohjEZMF05oxeqbdKG$$RdlFXmBCJ2musam7LZ3z6",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "openai_embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "qa_query_column_name" : null,
+        "credential_type" : "databricks",
+        "order_by_column" : "id",
+        "credential_db_scope" : "open_ai",
+        "credential_manual_token" : "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",
+        "operation" : "embed_texts",
+        "embed_text_column_name" : "content_chunk",
+        "qa_context_column_name" : null,
+        "credential_db_key" : "token",
+        "limit" : "10"
+      }
+    },
+    "tXodcSbgYBovboel2tEA2$$_LX_7JMoo1z2eVgIW7OsZ" : {
+      "id" : "tXodcSbgYBovboel2tEA2$$_LX_7JMoo1z2eVgIW7OsZ",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "web_silver_content_vectorized",
+        "slug" : "web_silver_content_vectorized",
+        "x" : 1520,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "svnGJSshNeRWwolMG04Lv$$PamuxgDMeL4aqI-d-oImj",
+          "slug" : "vectorize",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_silver_content_vectorized"
+      }
+    },
+    "x6wo_OvFPQKIJwazK9Sjo$$hw2ZO_1sBcZbOZjU4jscP" : {
+      "id" : "x6wo_OvFPQKIJwazK9Sjo$$hw2ZO_1sBcZbOZjU4jscP",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "with_id",
+        "slug" : "with_id",
+        "x" : 720,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki",
+          "slug" : "FlattenSchema_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "FrSeShafU_Hvduqrzc4Iy$$qwT1cJ7paJiVKhKM2mklX",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat('web-', monotonically_increasing_id())"
+          },
+          "description" : ""
+        }, {
+          "target" : "url",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "url"
+          },
+          "description" : ""
+        }, {
+          "target" : "content_chunk",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "content_chunk"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##content_chunk", "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##url" ]
+      }
+    },
+    "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo" : {
+      "id" : "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_out_errors",
+        "slug" : "filter_out_errors",
+        "x" : 1120,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "openai_embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "1a0Fv_Sum9UqJJ3PN5HC4$$ZaKzuKNdIpAi-faWQnvaF",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q##openai_error" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "openai_error is null"
+        }
+      }
+    },
+    "esrRqdxQBkBoW4GZax0hQ$$gKFSt-YDIrUP8m9VsKDvc" : {
+      "id" : "esrRqdxQBkBoW4GZax0hQ$$gKFSt-YDIrUP8m9VsKDvc",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "rename",
+        "slug" : "rename",
+        "x" : 1320,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "openai_embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "EWvmpDYAiT8mCx5SYskBy$$6zq_tTLYRaiBypWOyy3ac",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "id"
+          },
+          "description" : ""
+        }, {
+          "target" : "embedding",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "openai_embedding"
+          },
+          "description" : ""
+        }, {
+          "target" : "content_chunk",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "content_chunk"
+          },
+          "description" : ""
+        }, {
+          "target" : "url",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "url"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##id", "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##url", "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##content_chunk", "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##openai_embedding" ]
+      }
+    },
+    "7cXG5RvQdO6aRXdSLYQZ4$$qKbLiZXWw0p5NbdD7Ro7H" : {
+      "id" : "7cXG5RvQdO6aRXdSLYQZ4$$qKbLiZXWw0p5NbdD7Ro7H",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "web_bronze_content",
+        "slug" : "web_bronze_content",
+        "x" : 120,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "goRQ7CjpS6feBqHmJTZdV$$NSItoKdgZL-sJo6yRJgB3",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_content"
+      }
+    },
+    "Lj4pkM5iUtkV-9stsCZtC$$u4P_wzw-L_DiEhbXDp4JQ" : {
+      "id" : "Lj4pkM5iUtkV-9stsCZtC$$u4P_wzw-L_DiEhbXDp4JQ",
+      "component" : "TextProcessing",
+      "metadata" : {
+        "label" : "chunkify",
+        "slug" : "chunkify",
+        "x" : 320,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sfihi8VzplK2EYuTK94Fp$$fDeotKi5GvflGKoYxakxt",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "6KokGmx-Uo27G1MBoDnuu$$ZNS5u9N3mslekZoXrshdM",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "result_chunks",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "operation" : "text_split_into_chunks",
+        "column_name" : "content",
+        "split_chunk_size" : 1000
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}
