@@ -1,4 +1,5 @@
 from .web_silver_content_vectorized import web_silver_content_vectorized
+from .extract_answer import extract_answer
 from .question_seed import question_seed
 from .answer_question import answer_question
 from .vectorize_question import vectorize_question

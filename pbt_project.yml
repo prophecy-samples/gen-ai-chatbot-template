@@ -38,7 +38,7 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 02:05:35'
-    modifiedAt: '2023-06-13 07:03:37'
+    modifiedAt: '2023-06-13 15:56:40'
     datasets:
       inputs:
       - datasets/web_bronze_content
@@ -46,20 +46,6 @@ pipelines:
       outputs:
       - datasets/all_vectors_silver
       - datasets/web_silver_content_vectorized
-    subgraphs: []
-    dependencies: {}
-  pipelines/batch_chatbot:
-    name: batch_chatbot
-    description: ''
-    author: maciej@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2023-06-13 05:00:02'
-    modifiedAt: '2023-06-13 05:35:46'
-    datasets:
-      inputs: []
-      outputs: []
     subgraphs: []
     dependencies: {}
   pipelines/chatbot_batch:
@@ -70,7 +56,7 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 05:00:18'
-    modifiedAt: '2023-06-13 07:11:54'
+    modifiedAt: '2023-06-13 17:33:57'
     datasets:
       inputs:
       - datasets/question_seed
@@ -86,10 +72,10 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 07:12:50'
-    modifiedAt: '2023-06-13 08:23:39'
+    modifiedAt: '2023-06-13 16:38:40'
     datasets:
       inputs:
-      - datasets/bot_messages
+      - datasets/bot_messages_source
       - datasets/web_silver_content_vectorized
       outputs:
       - datasets/bot_messages
@@ -161,7 +147,7 @@ datasets:
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 04:20:06'
-    modifiedAt: '2023-06-13 07:04:19'
+    modifiedAt: '2023-06-13 15:56:30'
     mode: batch
     physicalDatasets:
       dev_product:
@@ -206,7 +192,7 @@ datasets:
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 07:16:03'
-    modifiedAt: '2023-06-13 07:55:59'
+    modifiedAt: '2023-06-13 15:37:36'
     mode: stream
     physicalDatasets:
       dev_product:
@@ -216,12 +202,27 @@ datasets:
         author: maciej@prophecy.io
         createdAt: '2023-06-13 07:16:03'
         modifiedAt: '2023-06-13 07:16:03'
+  datasets/bot_messages_source:
+    name: bot_messages_source
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-13 15:48:37'
+    modifiedAt: '2023-06-13 15:48:37'
+    mode: stream
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: File
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-13 15:48:37'
+        modifiedAt: '2023-06-13 15:48:37'
 templates: {}
 jobs: {}
 functions:
   author: null
   createdAt: '2023-06-13 00:50:07'
-  modifiedAt: '2023-06-13 08:23:39'
+  modifiedAt: '2023-06-13 22:29:28'
   gems: {}
   udfs:
     udfs/scrape_text:

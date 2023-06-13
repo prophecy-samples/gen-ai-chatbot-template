@@ -17,6 +17,7 @@ def pipeline(spark: SparkSession) -> None:
     df_with_original_content = with_original_content(spark, df_explode_matches, df_web_silver_content_vectorized)
     df_collect_context = collect_context(spark, df_with_original_content)
     df_answer_question = answer_question(spark, df_collect_context)
+    df_extract_answer = extract_answer(spark, df_answer_question)
 
 def main():
     spark = SparkSession.builder\

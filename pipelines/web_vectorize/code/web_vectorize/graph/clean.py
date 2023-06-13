@@ -7,5 +7,5 @@ from prophecy.transpiler.fixed_file_schema import *
 from web_vectorize.config.ConfigStore import *
 from web_vectorize.udfs.UDFs import *
 
-def filter_out_errors(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.filter(col("openai_error").isNull())
+def clean(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.filter((col("openai_error").isNull() & (instr(col("url"), "/tags") == lit(0))))

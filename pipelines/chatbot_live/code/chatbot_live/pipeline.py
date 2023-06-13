@@ -10,18 +10,16 @@ from chatbot_live.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     df_bot_messages = bot_messages(spark)
-    df_Script_1 = Script_1(spark, df_bot_messages)
-    df_Filter_1 = Filter_1(spark, df_Script_1)
+    df_parse_json = parse_json(spark, df_bot_messages)
+    df_only_user_msgs = only_user_msgs(spark, df_parse_json)
     df_web_silver_content_vectorized = web_silver_content_vectorized(spark)
-    df_vectorize_question = vectorize_question(spark, df_Filter_1)
+    df_vectorize_question = vectorize_question(spark, df_only_user_msgs)
     df_vector_lookup = vector_lookup(spark, df_vectorize_question)
     df_explode_matches = explode_matches(spark, df_vector_lookup)
     df_with_original_content = with_original_content(spark, df_explode_matches, df_web_silver_content_vectorized)
     df_answer_question = answer_question(spark, df_with_original_content)
-    df_Reformat_1 = Reformat_1(spark, df_answer_question)
-    df_Script_2 = Script_2(spark)
-    bot_messages_1(spark, df_Reformat_1)
-    df_collect_context = collect_context(spark, df_Script_2)
+    df_prepare_payload = prepare_payload(spark, df_answer_question)
+    bot_messages_1(spark, df_prepare_payload)
 
 def main():
     spark = SparkSession.builder\

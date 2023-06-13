@@ -235,7 +235,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "id",
-              "type" : "string",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -554,15 +554,15 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##content_chunk", "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##url" ]
+        "columnsSelector" : [ "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##url", "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##content_chunk" ]
       }
     },
     "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo" : {
       "id" : "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo",
       "component" : "Filter",
       "metadata" : {
-        "label" : "filter_out_errors",
-        "slug" : "filter_out_errors",
+        "label" : "clean",
+        "slug" : "clean",
         "x" : 1120,
         "y" : 120,
         "phase" : 0,
@@ -637,10 +637,10 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q##openai_error" ],
+        "columnsSelector" : [ "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q##openai_error", "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q##url" ],
         "condition" : {
           "format" : "sql",
-          "expression" : "openai_error is null"
+          "expression" : "openai_error is null and instr(url, '/tags') = 0"
         }
       }
     },

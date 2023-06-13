@@ -7,5 +7,8 @@ from prophecy.transpiler.fixed_file_schema import *
 from chatbot_live.config.ConfigStore import *
 from chatbot_live.udfs.UDFs import *
 
-def Filter_1(spark: SparkSession, Script_1: DataFrame) -> DataFrame:
-    return Script_1.filter((col("value_parsed.source") == lit("user")))
+def parse_json(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.select(
+        col("key"), 
+        from_json(col("value"), "channel STRING, ts STRING, text STRING, source STRING").alias("value_parsed")
+    )

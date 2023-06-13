@@ -89,6 +89,12 @@
     "sourcePort" : "vLXgMp7kwWEjHtgWNFab6$$ng5DSNOBJ8V3K6B7hwjZO",
     "target" : "YWp1izOE6MxSoEgLL1pPw$$d2GMTOf7gs1dqtQAeh5gU",
     "targetPort" : "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH"
+  }, {
+    "id" : "2kX4WBpupGy9_9RjDKYau$$aOj17yJF-Yi96Rqvnc0Du",
+    "source" : "yYYYXZbfeUrqZ7lCie4Xw$$jNiTFP7N4pcGIHbZ4_ugK",
+    "sourcePort" : "yfEkI6MaMT1Xq5GCAGW2d$$23F1V9sHLCeCuNhfZWS9y",
+    "target" : "IhSBhcAnbrsIWst7kJs1_$$bi4zNU_2ct0GZd0mm8v8t",
+    "targetPort" : "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y"
   } ],
   "processes" : {
     "Lfr-AkCYApvchMfscEZZA$$YgbXQHVoJguiMo2I6Naw3" : {
@@ -97,7 +103,7 @@
       "metadata" : {
         "label" : "vectorize_question",
         "slug" : "vectorize_question",
-        "x" : -1940,
+        "x" : -2080,
         "y" : -400,
         "phase" : 0,
         "cache" : false,
@@ -176,7 +182,8 @@
         "embed_text_column_name" : "input",
         "qa_context_column_name" : null,
         "credential_db_key" : "token",
-        "limit" : "10"
+        "limit" : "10",
+        "group_data" : true
       }
     },
     "yYYYXZbfeUrqZ7lCie4Xw$$jNiTFP7N4pcGIHbZ4_ugK" : {
@@ -185,7 +192,7 @@
       "metadata" : {
         "label" : "answer_question",
         "slug" : "answer_question",
-        "x" : -980,
+        "x" : -1120,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -294,7 +301,8 @@
         "embed_text_column_name" : null,
         "qa_context_column_name" : "context",
         "credential_db_key" : "token",
-        "limit" : "10"
+        "limit" : "10",
+        "group_data" : true
       }
     },
     "keSWTFvcdGeDpt5KfIKsY$$h9PxPzMvvX3ai6eeVtG0G" : {
@@ -303,7 +311,7 @@
       "metadata" : {
         "label" : "explode_matches",
         "slug" : "explode_matches",
-        "x" : -1540,
+        "x" : -1680,
         "y" : -400,
         "phase" : 0,
         "cache" : false,
@@ -437,7 +445,7 @@
       "metadata" : {
         "label" : "web_silver_content_vectorized",
         "slug" : "web_silver_content_vectorized",
-        "x" : -1540,
+        "x" : -1680,
         "y" : -140,
         "phase" : 0,
         "cache" : false,
@@ -463,7 +471,7 @@
       "metadata" : {
         "label" : "collect_context",
         "slug" : "collect_context",
-        "x" : -1160,
+        "x" : -1300,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -594,13 +602,110 @@
         "groupBy" : [ ]
       }
     },
+    "IhSBhcAnbrsIWst7kJs1_$$bi4zNU_2ct0GZd0mm8v8t" : {
+      "id" : "IhSBhcAnbrsIWst7kJs1_$$bi4zNU_2ct0GZd0mm8v8t",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "extract_answer",
+        "slug" : "extract_answer",
+        "x" : -900,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y",
+          "slug" : "answer_question",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "context",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_answer",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "choices",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : "string",
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "error",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "AaQh7GYV7P_IwWe9UVvy4$$db--QUCKnJffPRFuPpcJG",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "answer",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "openai_answer.choices[0]"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer.choices", "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer" ]
+      }
+    },
     "U-lC_dNhzQaQlvCkjN_Wd$$2pVjg-KnXiU3z6Er0HlFx" : {
       "id" : "U-lC_dNhzQaQlvCkjN_Wd$$2pVjg-KnXiU3z6Er0HlFx",
       "component" : "Source",
       "metadata" : {
         "label" : "question_seed",
         "slug" : "question_seed",
-        "x" : -2180,
+        "x" : -2320,
         "y" : -400,
         "phase" : 0,
         "cache" : false,
@@ -626,7 +731,7 @@
       "metadata" : {
         "label" : "vector_lookup",
         "slug" : "vector_lookup",
-        "x" : -1720,
+        "x" : -1860,
         "y" : -400,
         "phase" : 0,
         "cache" : false,
@@ -777,7 +882,7 @@
       "metadata" : {
         "label" : "with_original_content",
         "slug" : "with_original_content",
-        "x" : -1340,
+        "x" : -1480,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
