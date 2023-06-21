@@ -5,8 +5,10 @@ from .with_original_content import with_original_content
 from .explode_matches import explode_matches
 from .answer_question import answer_question
 from .only_user_msgs import only_user_msgs
+from .with_watermark import with_watermark
 from .prepare_payload import prepare_payload
 from .extract_fields import extract_fields
+from .collect_results import collect_results
 from .vectorize_question import vectorize_question
 from .bot_messages_target import bot_messages_target
 from .web_silver_content_vectorized import web_silver_content_vectorized

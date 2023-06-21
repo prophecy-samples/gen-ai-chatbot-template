@@ -20,7 +20,7 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 00:50:07'
-    modifiedAt: '2023-06-14 15:52:29'
+    modifiedAt: '2023-06-21 18:48:09'
     datasets:
       inputs:
       - datasets/web_bronze_sitemap
@@ -38,7 +38,7 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 02:05:35'
-    modifiedAt: '2023-06-17 01:26:40'
+    modifiedAt: '2023-06-21 18:48:19'
     datasets:
       inputs:
       - datasets/web_bronze_content
@@ -129,7 +129,7 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-20 04:48:19'
-    modifiedAt: '2023-06-20 19:59:51'
+    modifiedAt: '2023-06-21 19:50:29'
     datasets:
       inputs:
       - datasets/slack_chat
@@ -384,7 +384,7 @@ jobs: {}
 functions:
   author: null
   createdAt: '2023-06-13 00:50:07'
-  modifiedAt: '2023-06-21 06:18:39'
+  modifiedAt: '2023-06-21 22:29:37'
   gems: {}
   udfs:
     udfs/scrape_text:

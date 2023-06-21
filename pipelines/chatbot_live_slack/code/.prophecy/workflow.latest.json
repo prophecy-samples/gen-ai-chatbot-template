@@ -72,12 +72,6 @@
     "target" : "0gtmkg-pWvTmJ81vu3rt0$$onT6fFxRDrOnJwtRGQcgs",
     "targetPort" : "lqoTE4bdLJ1um6Ld4iueC$$V0FGgddKl3HLRqlqnefQg"
   }, {
-    "id" : "SMfIl9-skHcToEKbaZn4b",
-    "source" : "BfLQneSadumLppnAG7Qsv$$wwYeCK8KJiegox3u0m0zv",
-    "sourcePort" : "CaPbSFBpPKuMNZk69zkYR$$zcDaNRVaWqC6PChKzI_D2",
-    "target" : "eqPTKT6SNzjNtuintKWAE$$Mx5Y-tTfR7DiPazhYEdaE",
-    "targetPort" : "YcaI7BBGz0rJMZjWojDWL$$ethwodC5l5hYxHOeYizXl"
-  }, {
     "id" : "wwVgEJKbNij7TF7UZyXb-",
     "source" : "jf7wVrgL_gUbNBiLo5LJk$$N7oTrO3ucuGqB6O2aJ3OK",
     "sourcePort" : "acYrXmWib9xkXD37a0I3A$$SX4T30N3O-wzvlb9G3nAv",
@@ -113,6 +107,24 @@
     "sourcePort" : "kP78kzwFgtPJ-1vVRe_Lr$$fo8dRPrFBqlPCNeTy6y2U",
     "target" : "_DLzoPSfj9tyUrtoEn04Q$$4GMd-wPLb4Ua75kQiE634",
     "targetPort" : "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7"
+  }, {
+    "id" : "hojTO1NkrhMzbIEkTv50Q$$Kk7sit4gqxbaABNRDQliW",
+    "source" : "BfLQneSadumLppnAG7Qsv$$wwYeCK8KJiegox3u0m0zv",
+    "sourcePort" : "CaPbSFBpPKuMNZk69zkYR$$zcDaNRVaWqC6PChKzI_D2",
+    "target" : "DGfiic2hAnP26kA0uhD2L$$qHaYWXZnRzk8t67kFKIhi",
+    "targetPort" : "k0qLdf0xN-OLo30YooUY2$$VtAuuKDJOhaZ4vas7FHF-"
+  }, {
+    "id" : "9EC4iJCGS9Aia92dJRBua$$_jlXS-HBAMJZhjDRgi5q2",
+    "source" : "DGfiic2hAnP26kA0uhD2L$$qHaYWXZnRzk8t67kFKIhi",
+    "sourcePort" : "S6KPJypa3eeOsV_fXcct0$$uU22BwTWZFJekHu8N4Swg",
+    "target" : "XU31F30CI8AcvJDtS5A5-$$b1-e2M9-B6Q7-4ZTKIHSU",
+    "targetPort" : "d_On2r1A8QspYFPQY1kye$$bz5X0P1P8Znr-gSfaD-O9"
+  }, {
+    "id" : "I3tnfUfvpgEp80c2kmPc8$$Ug8jYoARRhI8yGn1edMH-",
+    "source" : "XU31F30CI8AcvJDtS5A5-$$b1-e2M9-B6Q7-4ZTKIHSU",
+    "sourcePort" : "PgoRv--72Mj5LNxhOtzJS$$M2Bx0m2G71y3dgluwR7sq",
+    "target" : "eqPTKT6SNzjNtuintKWAE$$Mx5Y-tTfR7DiPazhYEdaE",
+    "targetPort" : "YcaI7BBGz0rJMZjWojDWL$$ethwodC5l5hYxHOeYizXl"
   } ],
   "processes" : {
     "onG-sn8Qu9dyodcxuzyJi$$nYSvAkI13Kowckty84Qqv" : {
@@ -121,7 +133,7 @@
       "metadata" : {
         "label" : "vectorize_question",
         "slug" : "vectorize_question",
-        "x" : -220,
+        "x" : -320,
         "y" : -100,
         "phase" : 0,
         "cache" : false,
@@ -170,6 +182,15 @@
                 "mappings" : [ ],
                 "tags" : [ ]
               }
+            }, {
+              "name" : "created_at",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
             } ]
           },
           "isStreaming" : true
@@ -209,6 +230,15 @@
             }, {
               "name" : "channel",
               "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at",
+              "type" : "timestamp",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -265,8 +295,8 @@
       "metadata" : {
         "label" : "web_silver_content_vectorized",
         "slug" : "web_silver_content_vectorized",
-        "x" : 180,
-        "y" : 140,
+        "x" : 80,
+        "y" : 160,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -291,7 +321,7 @@
       "metadata" : {
         "label" : "parse_json",
         "slug" : "parse_json",
-        "x" : -740,
+        "x" : -840,
         "y" : -100,
         "phase" : 0,
         "cache" : false,
@@ -345,7 +375,7 @@
       "metadata" : {
         "label" : "bot_messages_target",
         "slug" : "bot_messages_target",
-        "x" : 820,
+        "x" : 1100,
         "y" : 20,
         "phase" : 0,
         "cache" : false,
@@ -403,7 +433,7 @@
       "metadata" : {
         "label" : "slack_chat",
         "slug" : "slack_chat",
-        "x" : -900,
+        "x" : -1000,
         "y" : -100,
         "phase" : 0,
         "cache" : false,
@@ -429,7 +459,7 @@
       "metadata" : {
         "label" : "only_user_msgs",
         "slug" : "only_user_msgs",
-        "x" : -560,
+        "x" : -660,
         "y" : -100,
         "phase" : 0,
         "cache" : false,
@@ -544,10 +574,10 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload.event.user", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload.event" ],
+        "columnsSelector" : [ "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload.event", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload.event.user", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed" ],
         "condition" : {
           "format" : "sql",
-          "expression" : "value_parsed.payload.event.user != 'U05AU1K4ELV'"
+          "expression" : "value_parsed is not null and value_parsed.payload.event.user != 'U05AU1K4ELV'"
         }
       }
     },
@@ -557,7 +587,7 @@
       "metadata" : {
         "label" : "extract_fields",
         "slug" : "extract_fields",
-        "x" : -400,
+        "x" : -500,
         "y" : -100,
         "phase" : 0,
         "cache" : false,
@@ -701,10 +731,17 @@
             "expression" : "value_parsed.payload.event.channel"
           },
           "description" : ""
+        }, {
+          "target" : "created_at",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CAST(from_unixtime(value_parsed.payload.event.ts) AS TIMESTAMP)"
+          },
+          "description" : ""
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event.user", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event.ts", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event.channel", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event.text", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed" ]
+        "columnsSelector" : [ "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event.ts", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event.channel", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event.text", "fjF1Vjlydpi0nEQB0Txg2$$e_m-hthRx48AxGD_QqXh7##value_parsed.payload.event.user" ]
       }
     },
     "0gtmkg-pWvTmJ81vu3rt0$$onT6fFxRDrOnJwtRGQcgs" : {
@@ -713,7 +750,7 @@
       "metadata" : {
         "label" : "prepare_payload",
         "slug" : "prepare_payload",
-        "x" : 660,
+        "x" : 940,
         "y" : 20,
         "phase" : 0,
         "cache" : false,
@@ -894,7 +931,195 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "lqoTE4bdLJ1um6Ld4iueC$$V0FGgddKl3HLRqlqnefQg##openai_answer", "lqoTE4bdLJ1um6Ld4iueC$$V0FGgddKl3HLRqlqnefQg##openai_answer.choices", "lqoTE4bdLJ1um6Ld4iueC$$V0FGgddKl3HLRqlqnefQg##ts", "lqoTE4bdLJ1um6Ld4iueC$$V0FGgddKl3HLRqlqnefQg##channel" ]
+        "columnsSelector" : [ "lqoTE4bdLJ1um6Ld4iueC$$V0FGgddKl3HLRqlqnefQg##channel", "lqoTE4bdLJ1um6Ld4iueC$$V0FGgddKl3HLRqlqnefQg##openai_answer", "lqoTE4bdLJ1um6Ld4iueC$$V0FGgddKl3HLRqlqnefQg##ts", "lqoTE4bdLJ1um6Ld4iueC$$V0FGgddKl3HLRqlqnefQg##openai_answer.choices" ]
+      }
+    },
+    "XU31F30CI8AcvJDtS5A5-$$b1-e2M9-B6Q7-4ZTKIHSU" : {
+      "id" : "XU31F30CI8AcvJDtS5A5-$$b1-e2M9-B6Q7-4ZTKIHSU",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "collect_results",
+        "slug" : "collect_results",
+        "x" : 600,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "d_On2r1A8QspYFPQY1kye$$bz5X0P1P8Znr-gSfaD-O9",
+          "slug" : "Watermark_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "pinecone_matches",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "score",
+                  "type" : "float",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "PgoRv--72Mj5LNxhOtzJS$$M2Bx0m2G71y3dgluwR7sq",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "content_chunk",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "array_join(collect_list(content_chunk), '; ')"
+          },
+          "description" : "",
+          "_row_id" : "c_11"
+        }, {
+          "target" : "input",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(input)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "d_On2r1A8QspYFPQY1kye$$bz5X0P1P8Znr-gSfaD-O9##content_chunk", "d_On2r1A8QspYFPQY1kye$$bz5X0P1P8Znr-gSfaD-O9##input", "d_On2r1A8QspYFPQY1kye$$bz5X0P1P8Znr-gSfaD-O9##channel", "d_On2r1A8QspYFPQY1kye$$bz5X0P1P8Znr-gSfaD-O9##ts", "d_On2r1A8QspYFPQY1kye$$bz5X0P1P8Znr-gSfaD-O9##created_at" ],
+        "groupBy" : [ {
+          "target" : "created_at",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "window(created_at, '1 second')"
+          },
+          "description" : "",
+          "_row_id" : "c_5"
+        }, {
+          "target" : "ts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ts"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "channel",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "channel"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
       }
     },
     "TkZfi4L87bTXeFeYnYLym$$38xqEQ_Nbftgl_aHqSiNb" : {
@@ -903,7 +1128,7 @@
       "metadata" : {
         "label" : "explode_matches",
         "slug" : "explode_matches",
-        "x" : 180,
+        "x" : 80,
         "y" : -100,
         "phase" : 0,
         "cache" : false,
@@ -946,6 +1171,15 @@
             }, {
               "name" : "channel",
               "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at",
+              "type" : "timestamp",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1070,8 +1304,17 @@
           },
           "targetTokens" : [ "ts" ],
           "target" : "ts"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "created_at",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "created_at"
+          },
+          "targetTokens" : [ "created_at" ],
+          "target" : "created_at"
         } ],
-        "columnsSelector" : [ "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##ts", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##pinecone_matches", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##text", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##channel" ],
+        "columnsSelector" : [ "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##created_at", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##ts", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##channel", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##text", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##pinecone_matches" ],
         "explodeColumns" : [ ],
         "delimiter" : "-"
       }
@@ -1082,7 +1325,7 @@
       "metadata" : {
         "label" : "answer_question",
         "slug" : "answer_question",
-        "x" : 500,
+        "x" : 760,
         "y" : 20,
         "phase" : 0,
         "cache" : false,
@@ -1096,22 +1339,22 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "pinecone_matches",
+              "name" : "created_at",
               "type" : {
                 "type" : "struct",
                 "fields" : [ {
-                  "name" : "id",
-                  "type" : "string",
-                  "nullable" : false,
+                  "name" : "start",
+                  "type" : "timestamp",
+                  "nullable" : true,
                   "metadata" : {
                     "description" : "",
                     "mappings" : [ ],
                     "tags" : [ ]
                   }
                 }, {
-                  "name" : "score",
-                  "type" : "float",
-                  "nullable" : false,
+                  "name" : "end",
+                  "type" : "timestamp",
+                  "nullable" : true,
                   "metadata" : {
                     "description" : "",
                     "mappings" : [ ],
@@ -1119,14 +1362,14 @@
                   }
                 } ]
               },
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
                 "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "input",
+              "name" : "ts",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
@@ -1144,47 +1387,16 @@
                 "tags" : [ ]
               }
             }, {
-              "name" : "ts",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "id",
-              "type" : "long",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "embedding",
-              "type" : {
-                "type" : "array",
-                "elementType" : "float",
-                "containsNull" : true
-              },
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
               "name" : "content_chunk",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
                 "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
-              "name" : "url",
+              "name" : "input",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
@@ -1350,7 +1562,7 @@
         "qa_context_column_name" : "content_chunk",
         "credential_db_key" : "token",
         "limit" : "10",
-        "qa_template" : "Answer the question based on the context below.\nContext:\n```\n{context}\n```\nQuestion: \n```\n{query}\n```\nAnswer:\n",
+        "qa_template" : "Answer the question based on the context below. Formulate the answer as if you were Shakespeare writing one of his plays! Reformulate any words that Shakespeare wouldn't know into explanations that he would understand. \n\nContext:\n```\n{context}\n```\n\nQuestion: \n```\n{query}\n```\n\nAnswer:\n",
         "group_data" : true
       }
     },
@@ -1360,7 +1572,7 @@
       "metadata" : {
         "label" : "with_original_content",
         "slug" : "with_original_content",
-        "x" : 340,
+        "x" : 260,
         "y" : 20,
         "phase" : 0,
         "cache" : false,
@@ -1424,6 +1636,15 @@
             }, {
               "name" : "ts",
               "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at",
+              "type" : "timestamp",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1500,22 +1721,170 @@
         } ],
         "expressions" : [ ],
         "hints" : [ {
-          "id" : "KDAHPp1e5F-0TOLmKorWL$$q8I9i2nTIcz7P26gfK5xH",
+          "id" : "0xOGwWrOXDVMNK7bQ3BLU$$xliOeF-GR7pgpoYxhEx8N",
           "alias" : "in0",
           "hintType" : "none",
           "propagateColumns" : false
         }, {
-          "id" : "8hFPQAuQqnHM4mBBm0OSp$$nK0xbDLNyJUMfAUcdi5cd",
+          "id" : "Qy_Tu3BDaSxM1ka8Y-ENO$$U0cPsnsYy5-j2T407eOYC",
           "alias" : "in1",
           "hintType" : "none",
           "propagateColumns" : false
         } ],
         "allIn1" : null,
         "activeTab" : "conditions",
-        "columnsSelector" : [ "8hFPQAuQqnHM4mBBm0OSp$$nK0xbDLNyJUMfAUcdi5cd##id", "KDAHPp1e5F-0TOLmKorWL$$q8I9i2nTIcz7P26gfK5xH##pinecone_matches", "KDAHPp1e5F-0TOLmKorWL$$q8I9i2nTIcz7P26gfK5xH##pinecone_matches.id" ],
+        "columnsSelector" : [ "0xOGwWrOXDVMNK7bQ3BLU$$xliOeF-GR7pgpoYxhEx8N##pinecone_matches.id", "0xOGwWrOXDVMNK7bQ3BLU$$xliOeF-GR7pgpoYxhEx8N##pinecone_matches", "Qy_Tu3BDaSxM1ka8Y-ENO$$U0cPsnsYy5-j2T407eOYC##id" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
+      }
+    },
+    "DGfiic2hAnP26kA0uhD2L$$qHaYWXZnRzk8t67kFKIhi" : {
+      "id" : "DGfiic2hAnP26kA0uhD2L$$qHaYWXZnRzk8t67kFKIhi",
+      "component" : "Watermark",
+      "metadata" : {
+        "label" : "with_watermark",
+        "slug" : "with_watermark",
+        "x" : 420,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "k0qLdf0xN-OLo30YooUY2$$VtAuuKDJOhaZ4vas7FHF-",
+          "slug" : "with_original_content",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "pinecone_matches",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "score",
+                  "type" : "float",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "S6KPJypa3eeOsV_fXcct0$$uU22BwTWZFJekHu8N4Swg",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "watermarks" : [ {
+          "isStreamingDF" : false,
+          "portId" : "k0qLdf0xN-OLo30YooUY2$$VtAuuKDJOhaZ4vas7FHF-",
+          "disableTextBox" : true,
+          "portSlug" : "with_original_content",
+          "expression" : "created_at",
+          "watermarkValue" : "1 second"
+        } ],
+        "isWatermarkingEnabled" : true
       }
     },
     "Sz7f_-w037aNhfFmH3DAh$$uqEiS9duAND-Kz21bxgdD" : {
@@ -1524,7 +1893,7 @@
       "metadata" : {
         "label" : "vector_lookup",
         "slug" : "vector_lookup",
-        "x" : -20,
+        "x" : -120,
         "y" : -100,
         "phase" : 0,
         "cache" : false,
@@ -1567,6 +1936,15 @@
             }, {
               "name" : "channel",
               "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at",
+              "type" : "timestamp",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1634,6 +2012,15 @@
             }, {
               "name" : "channel",
               "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at",
+              "type" : "timestamp",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1719,7 +2106,7 @@
         "environment" : "us-east-1-aws",
         "credential_db_key" : "token",
         "vector_column_name" : "openai_embedding",
-        "top_k" : 1,
+        "top_k" : 3,
         "credential_manual_api_key" : ""
       }
     }

@@ -18,7 +18,9 @@ def pipeline(spark: SparkSession) -> None:
     df_vector_lookup = vector_lookup(spark, df_vectorize_question)
     df_explode_matches = explode_matches(spark, df_vector_lookup)
     df_with_original_content = with_original_content(spark, df_explode_matches, df_web_silver_content_vectorized)
-    df_answer_question = answer_question(spark, df_with_original_content)
+    df_with_watermark = with_watermark(spark, df_with_original_content)
+    df_collect_results = collect_results(spark, df_with_watermark)
+    df_answer_question = answer_question(spark, df_collect_results)
     df_prepare_payload = prepare_payload(spark, df_answer_question)
     bot_messages_target(spark, df_prepare_payload)
 

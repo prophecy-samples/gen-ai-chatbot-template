@@ -12,5 +12,6 @@ def extract_fields(spark: SparkSession, in0: DataFrame) -> DataFrame:
         col("value_parsed.payload.event.text").alias("text"), 
         col("value_parsed.payload.event.ts").alias("ts"), 
         col("value_parsed.payload.event.user").alias("user"), 
-        col("value_parsed.payload.event.channel").alias("channel")
+        col("value_parsed.payload.event.channel").alias("channel"), 
+        from_unixtime(col("value_parsed.payload.event.ts")).cast(TimestampType()).alias("created_at")
     )

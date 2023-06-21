@@ -7,7 +7,5 @@ from prophecy.transpiler.fixed_file_schema import *
 from chatbot_live_slack.config.ConfigStore import *
 from chatbot_live_slack.udfs.UDFs import *
 
-def only_user_msgs(spark: SparkSession, Script_1: DataFrame) -> DataFrame:
-    return Script_1.filter(
-        (col("value_parsed").isNotNull() & (col("value_parsed.payload.event.user") != lit("U05AU1K4ELV")))
-    )
+def with_watermark(spark: SparkSession, with_original_content: DataFrame) -> DataFrame:
+    return with_original_content.withWatermark("created_at", "1 second")
