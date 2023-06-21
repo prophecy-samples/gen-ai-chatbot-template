@@ -16,5 +16,5 @@ def vectorize_question(spark: SparkSession, question_seed: DataFrame) -> DataFra
         .withColumn("_texts", array(col("value_parsed.text")))\
         .withColumn("_embedded", expr("openai_embed_texts(_texts)"))\
         .withColumn("openai_embedding", expr("_embedded.embeddings[0]"))\
-        .withColumn("openai_error", expr("_embedded.error"))\
+        .withColumn("openai_error", col("_embedded.error"))\
         .drop("_texts", "_embedded")

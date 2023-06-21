@@ -1,0 +1,25 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: channel
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ts
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: answer
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

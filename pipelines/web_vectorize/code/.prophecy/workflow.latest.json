@@ -66,37 +66,212 @@
     "target" : "x6wo_OvFPQKIJwazK9Sjo$$hw2ZO_1sBcZbOZjU4jscP",
     "targetPort" : "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki"
   }, {
-    "id" : "dPxaku9wcqkOCY8wFIHuK$$mAoftzgvMopkotSSBZloK",
-    "source" : "x6wo_OvFPQKIJwazK9Sjo$$hw2ZO_1sBcZbOZjU4jscP",
-    "sourcePort" : "FrSeShafU_Hvduqrzc4Iy$$qwT1cJ7paJiVKhKM2mklX",
-    "target" : "rRnKDPTxDO2KFNpbdVY6r$$l1WeCF_WY8S6pGMAbI8uU",
-    "targetPort" : "qFrZ4QxMX11aOMZM0fnjv$$QmbdSA6qB9w85WYeGboLW"
-  }, {
     "id" : "LM6-ozxw2XaiPCZ0u8OIX$$6bprmwNZkX1DaVpmlhmyt",
     "source" : "esrRqdxQBkBoW4GZax0hQ$$gKFSt-YDIrUP8m9VsKDvc",
     "sourcePort" : "EWvmpDYAiT8mCx5SYskBy$$6zq_tTLYRaiBypWOyy3ac",
     "target" : "tXodcSbgYBovboel2tEA2$$_LX_7JMoo1z2eVgIW7OsZ",
     "targetPort" : "svnGJSshNeRWwolMG04Lv$$PamuxgDMeL4aqI-d-oImj"
   }, {
-    "id" : "f2HuMhAmTroFD2xSyWGoT$$yr0nk2E8gfHUX-fQKiuHN",
-    "source" : "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo",
-    "sourcePort" : "1a0Fv_Sum9UqJJ3PN5HC4$$ZaKzuKNdIpAi-faWQnvaF",
-    "target" : "esrRqdxQBkBoW4GZax0hQ$$gKFSt-YDIrUP8m9VsKDvc",
-    "targetPort" : "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN"
-  }, {
-    "id" : "8WQ21Qw0JyB9jg9rD2qEp$$zdj7OXjOe_sysOhI6r9Jt",
-    "source" : "rRnKDPTxDO2KFNpbdVY6r$$l1WeCF_WY8S6pGMAbI8uU",
-    "sourcePort" : "FTVlohjEZMF05oxeqbdKG$$RdlFXmBCJ2musam7LZ3z6",
-    "target" : "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo",
-    "targetPort" : "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q"
-  }, {
     "id" : "6N28TDXBSHYSBsz7WmCDy",
     "source" : "lziWraHTP2o1CVY9bKVb7$$-UQ-X9UItWjz2YDC9f23i",
     "sourcePort" : "5-sp2EA7rTRBanIb64G1G$$D8U-nkMNjtAjt-if7AsiR",
     "target" : "tXFUS98cX9nDoXkXA5VXK$$KjsAnwsTr7t2-ylPy0wim",
     "targetPort" : "-eR_rmc97m2Tx3UHccgT4$$bwsUTmkXcPg4wmf8V9F5R"
+  }, {
+    "id" : "60oz65qPneoq6dNqx02Yb",
+    "source" : "BvDi2nXZtRK_CkN8hnnfC$$UNRMGjBE7Ye6JKeCavZEx",
+    "sourcePort" : "LFp3T-CrXT5gnQeCgj0zs$$hp9iiTOFqqUhx9uj3C-JY",
+    "target" : "WhSQ1xw_o84I3ZLDPIcrR$$1ElX0OryNLbX9Q5lreQ01",
+    "targetPort" : "jiIfHsJnfl1TUtOHaaI1u$$JIqqBB6ALYUUTDs94F6ve"
+  }, {
+    "id" : "ztZphNndRgIkneYAKqfJT",
+    "source" : "QhALHVGMxDBFuyEvtN-_a$$eK7p2Vgn1VKHFj-qgSoBy",
+    "sourcePort" : "QmdrxFTCJ8uiIw53PCpEA$$p16C8cWU-NrzIbgkX9OC2",
+    "target" : "BvDi2nXZtRK_CkN8hnnfC$$UNRMGjBE7Ye6JKeCavZEx",
+    "targetPort" : "98vCNXqvFc4wH1i4r_caK$$V0wDtn_JpYHSjyUnGD0sv"
+  }, {
+    "id" : "JK_k6g5G5_cSa7iLVLXU9",
+    "source" : "jpG-Aph1_H4NzYc305YTr$$38CRGjd72pDxp7_5GjYvN",
+    "sourcePort" : "ZsVqCjKMeBgE_4TIyNQ5b$$wXHsoIn3fRq2qDfw9nFxv",
+    "target" : "k6Ww4V7Y1_vSIj-J5uczc$$b978SK95BPEBvmH95wUse",
+    "targetPort" : "jnPh1ybg5MLMZSmSqbgJ-$$eQ8SuZqhwh9jaq65RuUyk"
+  }, {
+    "id" : "yQq0YAgmQ7Kkoie64DoCI",
+    "source" : "k6Ww4V7Y1_vSIj-J5uczc$$b978SK95BPEBvmH95wUse",
+    "sourcePort" : "QrfR3Ntjji25QvuWAUFYi$$sQrsPPEtycphbTgFdOQpi",
+    "target" : "4pB2Rm9lw6ci3ab6TkBLi$$P3vwhHxkI0Sn5vQyaiz9O",
+    "targetPort" : "2JHwGFGim8PYThVHap8Sb$$EJqG90f8Ndtmg4vJ6r6vx"
+  }, {
+    "id" : "aYdP8OyG0se94Exi-rciB$$8_y9bTRK9yj2_EvzWkUGR",
+    "source" : "x6wo_OvFPQKIJwazK9Sjo$$hw2ZO_1sBcZbOZjU4jscP",
+    "sourcePort" : "FrSeShafU_Hvduqrzc4Iy$$qwT1cJ7paJiVKhKM2mklX",
+    "target" : "rRnKDPTxDO2KFNpbdVY6r$$l1WeCF_WY8S6pGMAbI8uU",
+    "targetPort" : "qFrZ4QxMX11aOMZM0fnjv$$QmbdSA6qB9w85WYeGboLW"
+  }, {
+    "id" : "syTYv_YQ7rQDS_jMIZOzJ$$p4IEPTCT4_RuDfab_vJac",
+    "source" : "rRnKDPTxDO2KFNpbdVY6r$$l1WeCF_WY8S6pGMAbI8uU",
+    "sourcePort" : "FTVlohjEZMF05oxeqbdKG$$RdlFXmBCJ2musam7LZ3z6",
+    "target" : "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo",
+    "targetPort" : "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q"
+  }, {
+    "id" : "njqyhBbppt-j-dD2YaxIa",
+    "source" : "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo",
+    "sourcePort" : "1a0Fv_Sum9UqJJ3PN5HC4$$ZaKzuKNdIpAi-faWQnvaF",
+    "target" : "esrRqdxQBkBoW4GZax0hQ$$gKFSt-YDIrUP8m9VsKDvc",
+    "targetPort" : "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN"
   } ],
   "processes" : {
+    "k6Ww4V7Y1_vSIj-J5uczc$$b978SK95BPEBvmH95wUse" : {
+      "id" : "k6Ww4V7Y1_vSIj-J5uczc$$b978SK95BPEBvmH95wUse",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "scrape_pages",
+        "slug" : "scrape_pages",
+        "x" : 320,
+        "y" : -60,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "jnPh1ybg5MLMZSmSqbgJ-$$eQ8SuZqhwh9jaq65RuUyk",
+          "slug" : "web_bronze_sitemap",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "changefreq",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "loc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "priority",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "QrfR3Ntjji25QvuWAUFYi$$sQrsPPEtycphbTgFdOQpi",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "url",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "loc"
+          },
+          "description" : ""
+        }, {
+          "target" : "content",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "scrape_text(loc)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "jnPh1ybg5MLMZSmSqbgJ-$$eQ8SuZqhwh9jaq65RuUyk##loc" ]
+      }
+    },
+    "BvDi2nXZtRK_CkN8hnnfC$$UNRMGjBE7Ye6JKeCavZEx" : {
+      "id" : "BvDi2nXZtRK_CkN8hnnfC$$UNRMGjBE7Ye6JKeCavZEx",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "text_only",
+        "slug" : "text_only",
+        "x" : 320,
+        "y" : -240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "98vCNXqvFc4wH1i4r_caK$$V0wDtn_JpYHSjyUnGD0sv",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "LFp3T-CrXT5gnQeCgj0zs$$hp9iiTOFqqUhx9uj3C-JY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "content"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "98vCNXqvFc4wH1i4r_caK$$V0wDtn_JpYHSjyUnGD0sv##content" ]
+      }
+    },
     "lziWraHTP2o1CVY9bKVb7$$-UQ-X9UItWjz2YDC9f23i" : {
       "id" : "lziWraHTP2o1CVY9bKVb7$$-UQ-X9UItWjz2YDC9f23i",
       "component" : "Source",
@@ -105,7 +280,7 @@
         "slug" : "web_silver_content_vectorized_read",
         "x" : 120,
         "y" : 320,
-        "phase" : 1,
+        "phase" : 3,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -129,9 +304,9 @@
       "metadata" : {
         "label" : "FlattenSchema_1",
         "slug" : "FlattenSchema_1",
-        "x" : 520,
+        "x" : 540,
         "y" : 120,
-        "phase" : 0,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -209,7 +384,7 @@
           "targetTokens" : [ "result_chunks" ],
           "target" : "content_chunk"
         } ],
-        "columnsSelector" : [ "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##url", "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##result_chunks" ],
+        "columnsSelector" : [ "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##result_chunks", "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##url" ],
         "explodeColumns" : [ ],
         "delimiter" : "-"
       }
@@ -222,7 +397,7 @@
         "slug" : "all_vectors_silver",
         "x" : 320,
         "y" : 320,
-        "phase" : 1,
+        "phase" : 3,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -293,7 +468,7 @@
         "slug" : "vectorize",
         "x" : 920,
         "y" : 120,
-        "phase" : 0,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -406,7 +581,58 @@
         "embed_text_column_name" : "content_chunk",
         "qa_context_column_name" : null,
         "credential_db_key" : "token",
-        "limit" : "10"
+        "limit" : "10",
+        "qa_template" : "Answer the question based on the context below.\nContext:\n```\n{context}\n```\nQuestion: \n```\n{query}\n```\nAnswer:\n",
+        "group_data" : true
+      }
+    },
+    "4pB2Rm9lw6ci3ab6TkBLi$$P3vwhHxkI0Sn5vQyaiz9O" : {
+      "id" : "4pB2Rm9lw6ci3ab6TkBLi$$P3vwhHxkI0Sn5vQyaiz9O",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "web_bronze_content_1",
+        "slug" : "web_bronze_content_1",
+        "x" : 540,
+        "y" : -60,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2JHwGFGim8PYThVHap8Sb$$EJqG90f8Ndtmg4vJ6r6vx",
+          "slug" : "scrape_pages",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_content"
       }
     },
     "tXodcSbgYBovboel2tEA2$$_LX_7JMoo1z2eVgIW7OsZ" : {
@@ -417,7 +643,7 @@
         "slug" : "web_silver_content_vectorized",
         "x" : 1520,
         "y" : 120,
-        "phase" : 0,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -486,9 +712,9 @@
       "metadata" : {
         "label" : "with_id",
         "slug" : "with_id",
-        "x" : 720,
+        "x" : 740,
         "y" : 120,
-        "phase" : 0,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -554,7 +780,73 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##url", "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##content_chunk" ]
+        "columnsSelector" : [ "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##content_chunk", "wEkAbWnpNA8A7AodtMXce$$yLXwVvbTrxcuxU1g-Ttki##url" ]
+      }
+    },
+    "jpG-Aph1_H4NzYc305YTr$$38CRGjd72pDxp7_5GjYvN" : {
+      "id" : "jpG-Aph1_H4NzYc305YTr$$38CRGjd72pDxp7_5GjYvN",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "web_bronze_sitemap",
+        "slug" : "web_bronze_sitemap",
+        "x" : 120,
+        "y" : -60,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ZsVqCjKMeBgE_4TIyNQ5b$$wXHsoIn3fRq2qDfw9nFxv",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_sitemap"
+      }
+    },
+    "WhSQ1xw_o84I3ZLDPIcrR$$1ElX0OryNLbX9Q5lreQ01" : {
+      "id" : "WhSQ1xw_o84I3ZLDPIcrR$$1ElX0OryNLbX9Q5lreQ01",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "web_bronze_sitemap_raw",
+        "slug" : "web_bronze_sitemap_raw",
+        "x" : 540,
+        "y" : -240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "jiIfHsJnfl1TUtOHaaI1u$$JIqqBB6ALYUUTDs94F6ve",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_sitemap_raw"
       }
     },
     "Xg-i-w10XfJrcx8dVf8yw$$N9dVpgGbJgQgOn11xfJIo" : {
@@ -563,9 +855,9 @@
       "metadata" : {
         "label" : "clean",
         "slug" : "clean",
-        "x" : 1120,
+        "x" : 1100,
         "y" : 120,
-        "phase" : 0,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -637,7 +929,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q##openai_error", "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q##url" ],
+        "columnsSelector" : [ ],
         "condition" : {
           "format" : "sql",
           "expression" : "openai_error is null and instr(url, '/tags') = 0"
@@ -650,9 +942,9 @@
       "metadata" : {
         "label" : "rename",
         "slug" : "rename",
-        "x" : 1320,
+        "x" : 1280,
         "y" : 120,
-        "phase" : 0,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -756,7 +1048,33 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##id", "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##url", "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##content_chunk", "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##openai_embedding" ]
+        "columnsSelector" : [ ]
+      }
+    },
+    "QhALHVGMxDBFuyEvtN-_a$$eK7p2Vgn1VKHFj-qgSoBy" : {
+      "id" : "QhALHVGMxDBFuyEvtN-_a$$eK7p2Vgn1VKHFj-qgSoBy",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "web_bronze_url",
+        "slug" : "web_bronze_url",
+        "x" : 120,
+        "y" : -240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "QmdrxFTCJ8uiIw53PCpEA$$p16C8cWU-NrzIbgkX9OC2",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_url"
       }
     },
     "7cXG5RvQdO6aRXdSLYQZ4$$qKbLiZXWw0p5NbdD7Ro7H" : {
@@ -767,7 +1085,7 @@
         "slug" : "web_bronze_content",
         "x" : 120,
         "y" : 120,
-        "phase" : 0,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false
@@ -793,7 +1111,7 @@
         "slug" : "chunkify",
         "x" : 320,
         "y" : 120,
-        "phase" : 0,
+        "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false

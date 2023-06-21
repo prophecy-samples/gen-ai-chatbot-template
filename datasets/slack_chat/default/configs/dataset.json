@@ -1,0 +1,1 @@
+{"format":"slack","description":"","credential_type":"databricks","credential_db_scope":"slack","credential_manual_token":"","schema":{"type":"struct","fields":[{"name":"event","type":"string","nullable":true}]},"credential_db_key":"app_token","datasetType":"WebApp"}

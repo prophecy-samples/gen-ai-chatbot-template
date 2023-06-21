@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 setup(
     name = 'chatbot_live',
     version = '1.0',
-    packages = find_packages(include = ('chatbot_live*', )) + ["prophecy_config_instances"],
+    packages = find_packages(include = ('chatbot_live*', )) + ['prophecy_config_instances'],
     package_dir = {'prophecy_config_instances' : 'configs/resources/config'},
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',

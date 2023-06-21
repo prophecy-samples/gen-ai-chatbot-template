@@ -18,7 +18,7 @@ def vectorize(spark: SparkSession, with_id: DataFrame) -> DataFrame:
         .withColumn("_data", struct(col("*")))\
         .groupBy(col("_group_num"))\
         .agg(collect_list(col("_data")).alias("_data"), collect_list(col("content_chunk")).alias("_texts"))\
-        .withColumn("_embedded", expr("openai_embed_texts(_texts)"))\
+        .withColumn("_embedded", expr(f"openai_embed_texts(_texts)"))\
         .select(
           col("_texts"),
           col("_embedded.embeddings").alias("_embeddings"),

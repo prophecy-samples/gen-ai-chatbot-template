@@ -1,0 +1,2822 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "2",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "maciej_prophecy.genaichatbottemplate.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "slack_vectorize",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "6nDhhVl0KYdYyLG5WQuO5$$SR-7e1IYD1rA_OpKPoKEb",
+    "source" : "nc-3di7JPGHhNLDR4kkhi$$3HW1d-4cz8RUeaWa_MFQQ",
+    "sourcePort" : "eASPUAS-WUA2slxCsUifU$$SsMMQB-osK02ytC-IZz_n",
+    "target" : "ZzOwLq16ikgiDAqWc50Xw$$ijWbaH5TOC9mF72bYxCox",
+    "targetPort" : "MSCPNYbY9CNro4m-ADPob$$ANth4FLmcxE53uI01t4vM"
+  }, {
+    "id" : "GArDlyxjo_F0PNCmYpVew",
+    "source" : "ls6hTgnIRqkon1ewakD3z$$ql6WGeZoAUvFPzpDk7NU6",
+    "sourcePort" : "HlAm1y55qnfwD1qUJ9CTH$$A0woX9vRdih7_F3AZ08HD",
+    "target" : "cYGQxwBS9iorXU68x_ycP$$53RApmHKSTLdGKHaoDhkm",
+    "targetPort" : "sHSvLtFydVA5mq-5xrhiB$$yU14WcfviPGpcVZg32i8m"
+  }, {
+    "id" : "VBm4UT-xoe5vcTraaIOBX$$KFOwU8sFFre9CfU020Lr1",
+    "source" : "ZzOwLq16ikgiDAqWc50Xw$$ijWbaH5TOC9mF72bYxCox",
+    "sourcePort" : "cAC01Y9tekKq0EKAROntN$$7lbfyrqW355lw05jseatn",
+    "target" : "GXC_4PS5qdYH4_S7Sp6Eh$$OO0phzf4hGT07orQfcSep",
+    "targetPort" : "dIYdiUchfMgNODZ7Vpm4-$$4ZIFR-EYLGSsgZAxl0ei8"
+  }, {
+    "id" : "3DBlvuGORON2zgtXUa2qX$$neZn5sEGOGRoK5mHLS0_R",
+    "source" : "Z_4VQELSb16Ms7UKFjTqX$$1kzvwbmj7jkYSNgSNdnR9",
+    "sourcePort" : "QE13bCAW9hum-oEQseSRf$$2FYaUMvAbURUhKeiknxyY",
+    "target" : "Zy7fwmvPv1GE_HOYk_j9Y$$Lbh1_LY4T1H3JUO4gTHJ3",
+    "targetPort" : "psR9DHa63-5rOgZNGW53E$$EVmtu5KH98FkoMuhZgWFT"
+  }, {
+    "id" : "jxug2tyO4IZmsCZnjV0I2",
+    "source" : "cYGQxwBS9iorXU68x_ycP$$53RApmHKSTLdGKHaoDhkm",
+    "sourcePort" : "36ac-zRww8SRt1vkRGNqu$$7I03tZ12BjJvZU510iZ8w",
+    "target" : "nc-3di7JPGHhNLDR4kkhi$$3HW1d-4cz8RUeaWa_MFQQ",
+    "targetPort" : "jpRHSVci5b6-lDV10jpyH$$lSb01sSnwNLmcDCvdGDcZ"
+  }, {
+    "id" : "L-zJnr5JzO4qbubgRVCiS",
+    "source" : "cYGQxwBS9iorXU68x_ycP$$53RApmHKSTLdGKHaoDhkm",
+    "sourcePort" : "36ac-zRww8SRt1vkRGNqu$$7I03tZ12BjJvZU510iZ8w",
+    "target" : "nc-3di7JPGHhNLDR4kkhi$$3HW1d-4cz8RUeaWa_MFQQ",
+    "targetPort" : "_RF5zpMDTHeuDmKbJidI7$$UZj6u1jUVIefgGiXqI7Lu"
+  }, {
+    "id" : "uNLmywph7k7XIumrI_fxz$$mgBSg1ZgLicMWN6NXO6kU",
+    "source" : "Zy7fwmvPv1GE_HOYk_j9Y$$Lbh1_LY4T1H3JUO4gTHJ3",
+    "sourcePort" : "LqyKiXEsewLCNjDY8pz5-$$pr7nDEeZSlnwc39MeVDeS",
+    "target" : "ZBCHwfrVsmlSEDe_EOeb-$$Nsoo3n1PMdpHQG2juZEVD",
+    "targetPort" : "qbnC9mVfWWqRW6XTeR-Te$$qBkRDgDwsRkt2t3SzIH06"
+  }, {
+    "id" : "MS32DW8_RpGYa_kr_vhBk",
+    "source" : "ZBCHwfrVsmlSEDe_EOeb-$$Nsoo3n1PMdpHQG2juZEVD",
+    "sourcePort" : "4OVvF8JlLKt33FfsaVweV$$Nf3LJyiapHgFen8ki39p3",
+    "target" : "8h-hikHrOtBDdz_eRQ6YW$$ogzjpsuAJ3iVDgu2W80hK",
+    "targetPort" : "cD2-eiZxC0NAsV30Lz2V-$$r3jA0pmzNPcf3oUDG9JvC"
+  }, {
+    "id" : "aJjHgqBCpyr1zD6PVNOsz$$rSn29LqBvTmxolK9QdutR",
+    "source" : "CakN_N4I_TgLNmVB2CgLI$$_NkAWb9VyZ4lp8t7pnI2Y",
+    "sourcePort" : "CGSzci4nvlgy-7pYpF0Ki$$WwnOuR45sID7lfH4RmTWp",
+    "target" : "BSEgHAMnt3_1ygN8w_tIB$$dzJ4CEaXMFuu864v8gfA9",
+    "targetPort" : "tx8DQLn4VlpmKkzzqwwn-$$j-kPaB3EpQB-EvWXPIHRI"
+  }, {
+    "id" : "hqTAl5osLE571aw8lyl0I$$Ki8z71cB0BTLoTByEi0he",
+    "source" : "GXC_4PS5qdYH4_S7Sp6Eh$$OO0phzf4hGT07orQfcSep",
+    "sourcePort" : "AuPU4eqcgXjjkEWvdEhkB$$EB5tXNACC-GPXYfjww_bT",
+    "target" : "Z_4VQELSb16Ms7UKFjTqX$$1kzvwbmj7jkYSNgSNdnR9",
+    "targetPort" : "3GnWTH94AQSEzDAkPxrHm$$qkrpMwzXPcEM5foeC7cOn"
+  }, {
+    "id" : "YMXWduXha3_JU2uohZmWR$$tjV-PrkhHREOlAtE6-Uhn",
+    "source" : "BSEgHAMnt3_1ygN8w_tIB$$dzJ4CEaXMFuu864v8gfA9",
+    "sourcePort" : "hHvebEq2032njbicgb4CY$$2Wx8spbOXKi6PtZFh7TvO",
+    "target" : "nt8JXw0oDDdjMPeF1teP8$$vfhk4WCdyIj6tfCq2uI83",
+    "targetPort" : "C-y056EWfL9uup5fmvSs-$$6_umHLzC-jmr72UUMlsuX"
+  }, {
+    "id" : "4wigcjceOf6V-XR8H_rAE$$7eAjrySGEBRhFLNZYOdlm",
+    "source" : "UFssXL4Hl8uwAU9AapPwE$$6S4oL3ti8xcd-1uSa5Og7",
+    "sourcePort" : "ZOXSicLjKGUTeq9HkgSJE$$oP7L2dHwctY6R89UXUelZ",
+    "target" : "l6VB8gi4NMEIc-zolxN2n$$X88FisunxRduhWqug6MZ5",
+    "targetPort" : "MO60CoQzNm-HYcrgxj7xU$$wvZ8Zu6XuvnqLj0KYZ9e3"
+  }, {
+    "id" : "KBei9lD7GRQwZPVXn_aa-$$4xH2qYzjgDoLEAV2n_dOC",
+    "source" : "nt8JXw0oDDdjMPeF1teP8$$vfhk4WCdyIj6tfCq2uI83",
+    "sourcePort" : "lq4jLNNdwjY7g6uMylC4d$$ykwXw1_tcImirVgq4NRcM",
+    "target" : "UFssXL4Hl8uwAU9AapPwE$$6S4oL3ti8xcd-1uSa5Og7",
+    "targetPort" : "cK1IsOPtVhDNSoi-gRBIe$$EGwJJRG3xlTPJ9118nVpC"
+  } ],
+  "processes" : {
+    "Z_4VQELSb16Ms7UKFjTqX$$1kzvwbmj7jkYSNgSNdnR9" : {
+      "id" : "Z_4VQELSb16Ms7UKFjTqX$$1kzvwbmj7jkYSNgSNdnR9",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "merge_msgs",
+        "slug" : "merge_msgs",
+        "x" : 1100,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3GnWTH94AQSEzDAkPxrHm$$qkrpMwzXPcEM5foeC7cOn",
+          "slug" : "OrderBy_1_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sub_tss",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : false
+              },
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sub_texts",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : false
+              },
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "QE13bCAW9hum-oEQseSRf$$2FYaUMvAbURUhKeiknxyY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat('slack-', channel_id, '.', ts)"
+          },
+          "description" : ""
+        }, {
+          "target" : "channel_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "channel_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "ts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ts"
+          },
+          "description" : ""
+        }, {
+          "target" : "text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat(text, '; ', array_join(sub_texts, '; '))"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "3GnWTH94AQSEzDAkPxrHm$$qkrpMwzXPcEM5foeC7cOn##text", "3GnWTH94AQSEzDAkPxrHm$$qkrpMwzXPcEM5foeC7cOn##ts", "3GnWTH94AQSEzDAkPxrHm$$qkrpMwzXPcEM5foeC7cOn##channel_id", "3GnWTH94AQSEzDAkPxrHm$$qkrpMwzXPcEM5foeC7cOn##sub_texts" ]
+      }
+    },
+    "cYGQxwBS9iorXU68x_ycP$$53RApmHKSTLdGKHaoDhkm" : {
+      "id" : "cYGQxwBS9iorXU68x_ycP$$53RApmHKSTLdGKHaoDhkm",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "unique_only",
+        "slug" : "unique_only",
+        "x" : 320,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sHSvLtFydVA5mq-5xrhiB$$yU14WcfviPGpcVZg32i8m",
+          "slug" : "Filter_3",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "attachments",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "fallback",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "from_url",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "id",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_bytes",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_height",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_url",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_width",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "original_url",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "service_icon",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "service_name",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "text",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "title",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "title_link",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "blocks",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "block_id",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "elements",
+                    "type" : {
+                      "type" : "array",
+                      "elementType" : {
+                        "type" : "struct",
+                        "fields" : [ {
+                          "name" : "elements",
+                          "type" : {
+                            "type" : "array",
+                            "elementType" : {
+                              "type" : "struct",
+                              "fields" : [ {
+                                "name" : "text",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              }, {
+                                "name" : "type",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              }, {
+                                "name" : "url",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              }, {
+                                "name" : "user_id",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              } ]
+                            },
+                            "containsNull" : true
+                          },
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        }, {
+                          "name" : "type",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        } ]
+                      },
+                      "containsNull" : true
+                    },
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "type",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "client_msg_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "edited",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "ts",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "user",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "is_locked",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "latest_reply",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "parent_user_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reactions",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "count",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "name",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "users",
+                    "type" : {
+                      "type" : "array",
+                      "elementType" : "string",
+                      "containsNull" : true
+                    },
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reply_count",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reply_users",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reply_users_count",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "subscribed",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "team",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "thread_ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "user",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "36ac-zRww8SRt1vkRGNqu$$7I03tZ12BjJvZU510iZ8w",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ {
+          "colName" : "channel_id"
+        }, {
+          "colName" : "ts"
+        } ],
+        "dedupType" : "any",
+        "columnsSelector" : [ "sHSvLtFydVA5mq-5xrhiB$$yU14WcfviPGpcVZg32i8m##ts", "sHSvLtFydVA5mq-5xrhiB$$yU14WcfviPGpcVZg32i8m##channel_id" ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      }
+    },
+    "GXC_4PS5qdYH4_S7Sp6Eh$$OO0phzf4hGT07orQfcSep" : {
+      "id" : "GXC_4PS5qdYH4_S7Sp6Eh$$OO0phzf4hGT07orQfcSep",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "group_threads",
+        "slug" : "group_threads",
+        "x" : 920,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "dIYdiUchfMgNODZ7Vpm4-$$4ZIFR-EYLGSsgZAxl0ei8",
+          "slug" : "Filter_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "thread_ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sub_ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sub_text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sub_thread_ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "AuPU4eqcgXjjkEWvdEhkB$$EB5tXNACC-GPXYfjww_bT",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(text)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "sub_tss",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "collect_list(sub_ts)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "sub_texts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "collect_list(sub_text)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "groupBy",
+        "columnsSelector" : [ "dIYdiUchfMgNODZ7Vpm4-$$4ZIFR-EYLGSsgZAxl0ei8##text", "dIYdiUchfMgNODZ7Vpm4-$$4ZIFR-EYLGSsgZAxl0ei8##sub_text", "dIYdiUchfMgNODZ7Vpm4-$$4ZIFR-EYLGSsgZAxl0ei8##channel_id", "dIYdiUchfMgNODZ7Vpm4-$$4ZIFR-EYLGSsgZAxl0ei8##ts", "dIYdiUchfMgNODZ7Vpm4-$$4ZIFR-EYLGSsgZAxl0ei8##sub_ts" ],
+        "groupBy" : [ {
+          "target" : "channel_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "channel_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ts"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      }
+    },
+    "Zy7fwmvPv1GE_HOYk_j9Y$$Lbh1_LY4T1H3JUO4gTHJ3" : {
+      "id" : "Zy7fwmvPv1GE_HOYk_j9Y$$Lbh1_LY4T1H3JUO4gTHJ3",
+      "component" : "OpenAI",
+      "metadata" : {
+        "label" : "vectorize",
+        "slug" : "vectorize",
+        "x" : 1320,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "psR9DHa63-5rOgZNGW53E$$EVmtu5KH98FkoMuhZgWFT",
+          "slug" : "Reformat_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "LqyKiXEsewLCNjDY8pz5-$$pr7nDEeZSlnwc39MeVDeS",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "openai_embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "qa_query_column_name" : null,
+        "credential_type" : "databricks",
+        "order_by_column" : "ts",
+        "credential_db_scope" : "open_ai",
+        "credential_manual_token" : "",
+        "operation" : "embed_texts",
+        "embed_text_column_name" : "text",
+        "qa_context_column_name" : null,
+        "credential_db_key" : "token",
+        "limit" : "10",
+        "group_data" : true
+      }
+    },
+    "nc-3di7JPGHhNLDR4kkhi$$3HW1d-4cz8RUeaWa_MFQQ" : {
+      "id" : "nc-3di7JPGHhNLDR4kkhi$$3HW1d-4cz8RUeaWa_MFQQ",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "add_threads",
+        "slug" : "add_threads",
+        "x" : 520,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "jpRHSVci5b6-lDV10jpyH$$lSb01sSnwNLmcDCvdGDcZ",
+          "slug" : "conversations",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "attachments",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "fallback",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "from_url",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "id",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_bytes",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_height",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_url",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_width",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "original_url",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "service_icon",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "service_name",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "text",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "title",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "title_link",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "blocks",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "block_id",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "elements",
+                    "type" : {
+                      "type" : "array",
+                      "elementType" : {
+                        "type" : "struct",
+                        "fields" : [ {
+                          "name" : "elements",
+                          "type" : {
+                            "type" : "array",
+                            "elementType" : {
+                              "type" : "struct",
+                              "fields" : [ {
+                                "name" : "text",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              }, {
+                                "name" : "type",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              }, {
+                                "name" : "url",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              }, {
+                                "name" : "user_id",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              } ]
+                            },
+                            "containsNull" : true
+                          },
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        }, {
+                          "name" : "type",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        } ]
+                      },
+                      "containsNull" : true
+                    },
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "type",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "client_msg_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "edited",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "ts",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "user",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "is_locked",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "latest_reply",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "parent_user_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reactions",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "count",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "name",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "users",
+                    "type" : {
+                      "type" : "array",
+                      "elementType" : "string",
+                      "containsNull" : true
+                    },
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reply_count",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reply_users",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reply_users_count",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "subscribed",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "team",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "thread_ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "user",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "_RF5zpMDTHeuDmKbJidI7$$UZj6u1jUVIefgGiXqI7Lu",
+          "slug" : "subconversations",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "attachments",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "fallback",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "from_url",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "id",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_bytes",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_height",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_url",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "image_width",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "original_url",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "service_icon",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "service_name",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "text",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "title",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "title_link",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "blocks",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "block_id",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "elements",
+                    "type" : {
+                      "type" : "array",
+                      "elementType" : {
+                        "type" : "struct",
+                        "fields" : [ {
+                          "name" : "elements",
+                          "type" : {
+                            "type" : "array",
+                            "elementType" : {
+                              "type" : "struct",
+                              "fields" : [ {
+                                "name" : "text",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              }, {
+                                "name" : "type",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              }, {
+                                "name" : "url",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              }, {
+                                "name" : "user_id",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              } ]
+                            },
+                            "containsNull" : true
+                          },
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        }, {
+                          "name" : "type",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        } ]
+                      },
+                      "containsNull" : true
+                    },
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "type",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "client_msg_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "edited",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "ts",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "user",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "is_locked",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "latest_reply",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "parent_user_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reactions",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "count",
+                    "type" : "long",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "name",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "users",
+                    "type" : {
+                      "type" : "array",
+                      "elementType" : "string",
+                      "containsNull" : true
+                    },
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reply_count",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reply_users",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "reply_users_count",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "subscribed",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "team",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "thread_ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "type",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "user",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "eASPUAS-WUA2slxCsUifU$$SsMMQB-osK02ytC-IZz_n",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "subconversations",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "conversations.ts = subconversations.thread_ts"
+          },
+          "joinType" : "left_outer"
+        } ],
+        "expressions" : [ {
+          "target" : "channel_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "conversations.channel_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "conversations.ts"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "conversations.text"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "thread_ts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "conversations.thread_ts"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "sub_ts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "subconversations.ts"
+          },
+          "description" : "",
+          "_row_id" : "c_560"
+        }, {
+          "target" : "sub_text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "subconversations.text"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "sub_thread_ts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "subconversations.thread_ts"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "jpRHSVci5b6-lDV10jpyH$$lSb01sSnwNLmcDCvdGDcZ",
+          "alias" : "conversations",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "_RF5zpMDTHeuDmKbJidI7$$UZj6u1jUVIefgGiXqI7Lu",
+          "alias" : "subconversations",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "conditions",
+        "columnsSelector" : [ "jpRHSVci5b6-lDV10jpyH$$lSb01sSnwNLmcDCvdGDcZ##ts", "_RF5zpMDTHeuDmKbJidI7$$UZj6u1jUVIefgGiXqI7Lu##thread_ts", "jpRHSVci5b6-lDV10jpyH$$lSb01sSnwNLmcDCvdGDcZ##ts", "jpRHSVci5b6-lDV10jpyH$$lSb01sSnwNLmcDCvdGDcZ##text", "jpRHSVci5b6-lDV10jpyH$$lSb01sSnwNLmcDCvdGDcZ##thread_ts", "_RF5zpMDTHeuDmKbJidI7$$UZj6u1jUVIefgGiXqI7Lu##thread_ts", "_RF5zpMDTHeuDmKbJidI7$$UZj6u1jUVIefgGiXqI7Lu##text", "_RF5zpMDTHeuDmKbJidI7$$UZj6u1jUVIefgGiXqI7Lu##ts", "jpRHSVci5b6-lDV10jpyH$$lSb01sSnwNLmcDCvdGDcZ##channel_id" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "conversations"
+      }
+    },
+    "ls6hTgnIRqkon1ewakD3z$$ql6WGeZoAUvFPzpDk7NU6" : {
+      "id" : "ls6hTgnIRqkon1ewakD3z$$ql6WGeZoAUvFPzpDk7NU6",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "slack_bronze_conversations",
+        "slug" : "slack_bronze_conversations",
+        "x" : 120,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "HlAm1y55qnfwD1qUJ9CTH$$A0woX9vRdih7_F3AZ08HD",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/slack_bronze_conversations"
+      }
+    },
+    "ZBCHwfrVsmlSEDe_EOeb-$$Nsoo3n1PMdpHQG2juZEVD" : {
+      "id" : "ZBCHwfrVsmlSEDe_EOeb-$$Nsoo3n1PMdpHQG2juZEVD",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "rename",
+        "slug" : "rename",
+        "x" : 1500,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qbnC9mVfWWqRW6XTeR-Te$$qBkRDgDwsRkt2t3SzIH06",
+          "slug" : "OpenAI_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "openai_embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "openai_error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "4OVvF8JlLKt33FfsaVweV$$Nf3LJyiapHgFen8ki39p3",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "id"
+          },
+          "description" : ""
+        }, {
+          "target" : "channel_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "channel_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "ts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ts"
+          },
+          "description" : ""
+        }, {
+          "target" : "text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "text"
+          },
+          "description" : ""
+        }, {
+          "target" : "embedding",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "openai_embedding"
+          },
+          "description" : ""
+        }, {
+          "target" : "error",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "openai_error"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "qbnC9mVfWWqRW6XTeR-Te$$qBkRDgDwsRkt2t3SzIH06##text", "qbnC9mVfWWqRW6XTeR-Te$$qBkRDgDwsRkt2t3SzIH06##openai_error", "qbnC9mVfWWqRW6XTeR-Te$$qBkRDgDwsRkt2t3SzIH06##id", "qbnC9mVfWWqRW6XTeR-Te$$qBkRDgDwsRkt2t3SzIH06##openai_embedding", "qbnC9mVfWWqRW6XTeR-Te$$qBkRDgDwsRkt2t3SzIH06##channel_id", "qbnC9mVfWWqRW6XTeR-Te$$qBkRDgDwsRkt2t3SzIH06##ts" ]
+      }
+    },
+    "BSEgHAMnt3_1ygN8w_tIB$$dzJ4CEaXMFuu864v8gfA9" : {
+      "id" : "BSEgHAMnt3_1ygN8w_tIB$$dzJ4CEaXMFuu864v8gfA9",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "prepare",
+        "slug" : "prepare",
+        "x" : 320,
+        "y" : 420,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "tx8DQLn4VlpmKkzzqwwn-$$j-kPaB3EpQB-EvWXPIHRI",
+          "slug" : "slack_silver_conversations_vectorized_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "hHvebEq2032njbicgb4CY$$2Wx8spbOXKi6PtZFh7TvO",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "id"
+          },
+          "description" : ""
+        }, {
+          "target" : "content_chunk",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "text"
+          },
+          "description" : ""
+        }, {
+          "target" : "embedding",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "embedding"
+          },
+          "description" : ""
+        }, {
+          "target" : "url",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CAST(NULL AS STRING)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "tx8DQLn4VlpmKkzzqwwn-$$j-kPaB3EpQB-EvWXPIHRI##id", "tx8DQLn4VlpmKkzzqwwn-$$j-kPaB3EpQB-EvWXPIHRI##embedding", "tx8DQLn4VlpmKkzzqwwn-$$j-kPaB3EpQB-EvWXPIHRI##text" ]
+      }
+    },
+    "nt8JXw0oDDdjMPeF1teP8$$vfhk4WCdyIj6tfCq2uI83" : {
+      "id" : "nt8JXw0oDDdjMPeF1teP8$$vfhk4WCdyIj6tfCq2uI83",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "short_threads_only",
+        "slug" : "short_threads_only",
+        "x" : 520,
+        "y" : 420,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "C-y056EWfL9uup5fmvSs-$$6_umHLzC-jmr72UUMlsuX",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "lq4jLNNdwjY7g6uMylC4d$$ykwXw1_tcImirVgq4NRcM",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "C-y056EWfL9uup5fmvSs-$$6_umHLzC-jmr72UUMlsuX##content_chunk" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "length(content_chunk) < 2000"
+        }
+      }
+    },
+    "ZzOwLq16ikgiDAqWc50Xw$$ijWbaH5TOC9mF72bYxCox" : {
+      "id" : "ZzOwLq16ikgiDAqWc50Xw$$ijWbaH5TOC9mF72bYxCox",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "clean",
+        "slug" : "clean",
+        "x" : 720,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "MSCPNYbY9CNro4m-ADPob$$ANth4FLmcxE53uI01t4vM",
+          "slug" : "Join_1_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "thread_ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sub_ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sub_text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sub_thread_ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "cAC01Y9tekKq0EKAROntN$$7lbfyrqW355lw05jseatn",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "MSCPNYbY9CNro4m-ADPob$$ANth4FLmcxE53uI01t4vM##text", "MSCPNYbY9CNro4m-ADPob$$ANth4FLmcxE53uI01t4vM##sub_thread_ts" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "sub_thread_ts IS NOT NULL AND text != 'This message was deleted.'"
+        }
+      }
+    },
+    "UFssXL4Hl8uwAU9AapPwE$$6S4oL3ti8xcd-1uSa5Og7" : {
+      "id" : "UFssXL4Hl8uwAU9AapPwE$$6S4oL3ti8xcd-1uSa5Og7",
+      "component" : "Repartition",
+      "metadata" : {
+        "label" : "in_100_parts",
+        "slug" : "in_100_parts",
+        "x" : 680,
+        "y" : 420,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "cK1IsOPtVhDNSoi-gRBIe$$EGwJJRG3xlTPJ9118nVpC",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "ZOXSicLjKGUTeq9HkgSJE$$oP7L2dHwctY6R89UXUelZ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "overwriteDefaultNPartitions" : false,
+        "hashExpressions" : [ ],
+        "columnsSelector" : [ ],
+        "repartitionType" : "random_repartitioning",
+        "rangeExpressions" : [ ],
+        "defaultPartitions" : null,
+        "nPartitions" : "100"
+      }
+    },
+    "CakN_N4I_TgLNmVB2CgLI$$_NkAWb9VyZ4lp8t7pnI2Y" : {
+      "id" : "CakN_N4I_TgLNmVB2CgLI$$_NkAWb9VyZ4lp8t7pnI2Y",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "slack_silver_conversations_vectorized_1",
+        "slug" : "slack_silver_conversations_vectorized_1",
+        "x" : 120,
+        "y" : 420,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "CGSzci4nvlgy-7pYpF0Ki$$WwnOuR45sID7lfH4RmTWp",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/slack_silver_conversations_vectorized"
+      }
+    },
+    "l6VB8gi4NMEIc-zolxN2n$$X88FisunxRduhWqug6MZ5" : {
+      "id" : "l6VB8gi4NMEIc-zolxN2n$$X88FisunxRduhWqug6MZ5",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "all_vectors_silver",
+        "slug" : "all_vectors_silver",
+        "x" : 860,
+        "y" : 420,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "MO60CoQzNm-HYcrgxj7xU$$wvZ8Zu6XuvnqLj0KYZ9e3",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content_chunk",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/all_vectors_silver"
+      }
+    },
+    "8h-hikHrOtBDdz_eRQ6YW$$ogzjpsuAJ3iVDgu2W80hK" : {
+      "id" : "8h-hikHrOtBDdz_eRQ6YW$$ogzjpsuAJ3iVDgu2W80hK",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "slack_silver_conversations_vectorized",
+        "slug" : "slack_silver_conversations_vectorized",
+        "x" : 1700,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "cD2-eiZxC0NAsV30Lz2V-$$r3jA0pmzNPcf3oUDG9JvC",
+          "slug" : "OpenAI_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "channel_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ts",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "embedding",
+              "type" : {
+                "type" : "array",
+                "elementType" : "float",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "error",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/slack_silver_conversations_vectorized"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

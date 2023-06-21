@@ -192,7 +192,7 @@
       "metadata" : {
         "label" : "answer_question",
         "slug" : "answer_question",
-        "x" : -1120,
+        "x" : -1200,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -471,7 +471,7 @@
       "metadata" : {
         "label" : "collect_context",
         "slug" : "collect_context",
-        "x" : -1300,
+        "x" : -1340,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -608,7 +608,7 @@
       "metadata" : {
         "label" : "extract_answer",
         "slug" : "extract_answer",
-        "x" : -900,
+        "x" : -1060,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -696,7 +696,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer.choices", "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer" ]
+        "columnsSelector" : [ "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer", "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer.choices" ]
       }
     },
     "U-lC_dNhzQaQlvCkjN_Wd$$2pVjg-KnXiU3z6Er0HlFx" : {
