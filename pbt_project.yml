@@ -12,24 +12,6 @@ buildSystemDetails:
   createdAt: '2023-06-13 00:50:07'
   modifiedAt: '2023-06-13 00:50:07'
 pipelines:
-  pipelines/import_web:
-    name: import_web
-    description: ''
-    author: maciej@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2023-06-13 00:50:07'
-    modifiedAt: '2023-06-21 18:48:09'
-    datasets:
-      inputs:
-      - datasets/web_bronze_sitemap
-      - datasets/web_bronze_url
-      outputs:
-      - datasets/web_bronze_content
-      - datasets/web_bronze_sitemap_raw
-    subgraphs: []
-    dependencies: {}
   pipelines/web_vectorize:
     name: web_vectorize
     description: ''
@@ -60,7 +42,7 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 05:00:18'
-    modifiedAt: '2023-06-16 05:00:11'
+    modifiedAt: '2023-06-22 05:32:52'
     datasets:
       inputs:
       - datasets/question_seed
@@ -75,67 +57,32 @@ pipelines:
     mode: stream
     artefactID: ''
     language: python
-    createdAt: '2023-06-13 07:12:50'
-    modifiedAt: '2023-06-20 04:48:12'
-    datasets:
-      inputs:
-      - datasets/bot_messages_source
-      - datasets/web_silver_content_vectorized
-      outputs:
-      - datasets/bot_messages
-    subgraphs: []
-    dependencies: {}
-  pipelines/slack_ingest:
-    name: slack_ingest
-    description: ''
-    author: maciej@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2023-06-13 22:36:14'
-    modifiedAt: '2023-06-19 06:44:28'
-    datasets:
-      inputs:
-      - datasets/slack_bronze_channels_web
-      - datasets/slack_bronze_conversations_web
-      outputs:
-      - datasets/slack_bronze_channels
-      - datasets/slack_bronze_conversations
-    subgraphs: []
-    dependencies: {}
-  pipelines/slack_vectorize:
-    name: slack_vectorize
-    description: ''
-    author: maciej@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2023-06-14 00:05:16'
-    modifiedAt: '2023-06-19 07:47:28'
-    datasets:
-      inputs:
-      - datasets/slack_bronze_conversations
-      - datasets/slack_silver_conversations_vectorized
-      outputs:
-      - datasets/all_vectors_silver
-      - datasets/slack_silver_conversations_vectorized
-    subgraphs: []
-    dependencies: {}
-  pipelines/chatbot_live_slack:
-    name: chatbot_live_slack
-    description: ''
-    author: maciej@prophecy.io
-    mode: stream
-    artefactID: ''
-    language: python
-    createdAt: '2023-06-20 04:48:19'
-    modifiedAt: '2023-06-21 19:50:29'
+    createdAt: '2023-06-22 05:25:43'
+    modifiedAt: '2023-06-22 05:32:39'
     datasets:
       inputs:
       - datasets/slack_chat
       - datasets/web_silver_content_vectorized
       outputs:
       - datasets/bot_messages_target
+    subgraphs: []
+    dependencies: {}
+  pipelines/web_ingest:
+    name: web_ingest
+    description: ''
+    author: maciej@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-06-22 05:27:53'
+    modifiedAt: '2023-06-22 05:28:24'
+    datasets:
+      inputs:
+      - datasets/web_bronze_sitemap
+      - datasets/web_bronze_url
+      outputs:
+      - datasets/web_bronze_content
+      - datasets/web_bronze_sitemap_raw
     subgraphs: []
     dependencies: {}
 datasets:
@@ -384,7 +331,7 @@ jobs: {}
 functions:
   author: null
   createdAt: '2023-06-13 00:50:07'
-  modifiedAt: '2023-06-21 22:29:37'
+  modifiedAt: '2023-06-22 06:00:19'
   gems: {}
   udfs:
     udfs/scrape_text:

@@ -18,7 +18,20 @@ def answer_question(spark: SparkSession, Aggregate_1: DataFrame) -> DataFrame:
         .withColumn(
           "openai_answer",
           expr(
-            "openai_answer_question(_context, _query, \" Answer the question based on the context below.\nContext:\n```\n{context}\n```\nQuestion: \n```\n{query}\n```\nAnswer:\n \")"
+            f"openai_answer_question(_context, _query, \"Answer the question based on the context below. 
+
+Context:
+```
+{context}
+```
+
+Question: 
+```
+{query}
+```
+
+Answer:
+\")"
           )
         )\
         .drop("_context", "_query")

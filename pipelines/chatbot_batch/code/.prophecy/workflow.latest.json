@@ -192,7 +192,7 @@
       "metadata" : {
         "label" : "answer_question",
         "slug" : "answer_question",
-        "x" : -1200,
+        "x" : -1120,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -302,6 +302,7 @@
         "qa_context_column_name" : "context",
         "credential_db_key" : "token",
         "limit" : "10",
+        "qa_template" : "Answer the question based on the context below. \n\nContext:\n```\n{context}\n```\n\nQuestion: \n```\n{query}\n```\n\nAnswer:\n",
         "group_data" : true
       }
     },
@@ -471,7 +472,7 @@
       "metadata" : {
         "label" : "collect_context",
         "slug" : "collect_context",
-        "x" : -1340,
+        "x" : -1320,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -608,7 +609,7 @@
       "metadata" : {
         "label" : "extract_answer",
         "slug" : "extract_answer",
-        "x" : -1060,
+        "x" : -940,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -696,7 +697,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer", "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer.choices" ]
+        "columnsSelector" : [ "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer.choices", "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer" ]
       }
     },
     "U-lC_dNhzQaQlvCkjN_Wd$$2pVjg-KnXiU3z6Er0HlFx" : {

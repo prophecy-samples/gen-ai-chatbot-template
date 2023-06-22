@@ -7,5 +7,8 @@ from prophecy.transpiler.fixed_file_schema import *
 from chatbot_live.config.ConfigStore import *
 from chatbot_live.udfs.UDFs import *
 
-def prepare_payload(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.select(col("channel"), col("ts"), col("openai_answer.choices")[0].alias("answer"))
+def bot_messages_target(spark: SparkSession, in0: DataFrame):
+    from pyspark.dbutils import DBUtils
+    from spark_ai.webapps.slack import SlackUtilities
+    SlackUtilities(token = DBUtils(spark).secrets.get(scope = "slack", key = "token"), spark = spark)\
+        .write_messages(in0)

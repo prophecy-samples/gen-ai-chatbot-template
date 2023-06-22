@@ -1,0 +1,375 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "2",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "maciej_prophecy.genaichatbottemplate.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "web_ingest",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "0gFigWbu_f4pUn-3O7C6s",
+    "source" : "nEbNW_lLgkYCVc8hqfdwN$$25hjza2ov7UcKRCz1MloA",
+    "sourcePort" : "3nLdR40I5c0Fgyp9cWDJ9$$keaEi2Q2jkTqZxxn_WDfB",
+    "target" : "3u5ae5Hd2G3jtDNo3ixul$$Tbv3XnEyY9dIrxwVw1avt",
+    "targetPort" : "CFLd78WnSN61UDtHRsKp7$$M2DN6SgRCpFW400lBRWYm"
+  }, {
+    "id" : "RtA1r4vTvsoqHrLaGZK3s",
+    "source" : "Mtip3jhyXDNbqxet97Llq$$7H-OL23RMVCDiGDRfdEO5",
+    "sourcePort" : "qviaDTs-5iCqfiGZopf-p$$zklgh-5s_omvS06hDGB9J",
+    "target" : "nEbNW_lLgkYCVc8hqfdwN$$25hjza2ov7UcKRCz1MloA",
+    "targetPort" : "SS4YeFJ-UYz-W5_ji_O_L$$gYOe9ptiAMOzkpIn-ejRV"
+  }, {
+    "id" : "zHbnCQ27ZXbKu_8zvS1o3",
+    "source" : "8T5rDEgGsyVmI9WPbQM7y$$9Xwym8XoDv3xVomNVjpkM",
+    "sourcePort" : "-MI6avNXNWLKgiO_9CkJS$$mbqBhsGlgpZAb0rFK3tfk",
+    "target" : "0FNx8lliiaB3vDvlX5Owb$$b3rW0TvtGqV0yC-Cs7_zA",
+    "targetPort" : "eiR3MvyKSzKiZbH_YyHsk$$7ID2ovwLy1MWi-Zmuk7yK"
+  }, {
+    "id" : "pk6W-k9G42KL1zritVHsn",
+    "source" : "0FNx8lliiaB3vDvlX5Owb$$b3rW0TvtGqV0yC-Cs7_zA",
+    "sourcePort" : "QJbmKF_VtBZZGnaZICoXv$$7oYFESkrYYvs3rAc8X0Pb",
+    "target" : "-xIxAocyWrLdcxF3MQvLV$$yYTEJzO4XhzoErN7Jz-rF",
+    "targetPort" : "GVllb2djvW5C_k07k_eH6$$t_sNxU5iwoWtFxSfliNHy"
+  } ],
+  "processes" : {
+    "nEbNW_lLgkYCVc8hqfdwN$$25hjza2ov7UcKRCz1MloA" : {
+      "id" : "nEbNW_lLgkYCVc8hqfdwN$$25hjza2ov7UcKRCz1MloA",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "text_only",
+        "slug" : "text_only",
+        "x" : 220,
+        "y" : 80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SS4YeFJ-UYz-W5_ji_O_L$$gYOe9ptiAMOzkpIn-ejRV",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "3nLdR40I5c0Fgyp9cWDJ9$$keaEi2Q2jkTqZxxn_WDfB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "content"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "98vCNXqvFc4wH1i4r_caK$$V0wDtn_JpYHSjyUnGD0sv##content" ]
+      }
+    },
+    "Mtip3jhyXDNbqxet97Llq$$7H-OL23RMVCDiGDRfdEO5" : {
+      "id" : "Mtip3jhyXDNbqxet97Llq$$7H-OL23RMVCDiGDRfdEO5",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "web_bronze_url",
+        "slug" : "web_bronze_url",
+        "x" : 20,
+        "y" : 80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "qviaDTs-5iCqfiGZopf-p$$zklgh-5s_omvS06hDGB9J",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_url"
+      }
+    },
+    "3u5ae5Hd2G3jtDNo3ixul$$Tbv3XnEyY9dIrxwVw1avt" : {
+      "id" : "3u5ae5Hd2G3jtDNo3ixul$$Tbv3XnEyY9dIrxwVw1avt",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "web_bronze_sitemap_raw",
+        "slug" : "web_bronze_sitemap_raw",
+        "x" : 440,
+        "y" : 80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "CFLd78WnSN61UDtHRsKp7$$M2DN6SgRCpFW400lBRWYm",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_sitemap_raw"
+      }
+    },
+    "0FNx8lliiaB3vDvlX5Owb$$b3rW0TvtGqV0yC-Cs7_zA" : {
+      "id" : "0FNx8lliiaB3vDvlX5Owb$$b3rW0TvtGqV0yC-Cs7_zA",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "scrape_pages",
+        "slug" : "scrape_pages",
+        "x" : 220,
+        "y" : 260,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "eiR3MvyKSzKiZbH_YyHsk$$7ID2ovwLy1MWi-Zmuk7yK",
+          "slug" : "web_bronze_sitemap",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "changefreq",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "loc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "priority",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "QJbmKF_VtBZZGnaZICoXv$$7oYFESkrYYvs3rAc8X0Pb",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "url",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "loc"
+          },
+          "description" : ""
+        }, {
+          "target" : "content",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "scrape_text(loc)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "jnPh1ybg5MLMZSmSqbgJ-$$eQ8SuZqhwh9jaq65RuUyk##loc" ]
+      }
+    },
+    "-xIxAocyWrLdcxF3MQvLV$$yYTEJzO4XhzoErN7Jz-rF" : {
+      "id" : "-xIxAocyWrLdcxF3MQvLV$$yYTEJzO4XhzoErN7Jz-rF",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "web_bronze_content_1",
+        "slug" : "web_bronze_content_1",
+        "x" : 440,
+        "y" : 260,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GVllb2djvW5C_k07k_eH6$$t_sNxU5iwoWtFxSfliNHy",
+          "slug" : "scrape_pages",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_content"
+      }
+    },
+    "8T5rDEgGsyVmI9WPbQM7y$$9Xwym8XoDv3xVomNVjpkM" : {
+      "id" : "8T5rDEgGsyVmI9WPbQM7y$$9Xwym8XoDv3xVomNVjpkM",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "web_bronze_sitemap",
+        "slug" : "web_bronze_sitemap",
+        "x" : 20,
+        "y" : 260,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "-MI6avNXNWLKgiO_9CkJS$$mbqBhsGlgpZAb0rFK3tfk",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/web_bronze_sitemap"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

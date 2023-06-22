@@ -15,7 +15,7 @@ def vector_lookup(spark: SparkSession, in0: DataFrame) -> DataFrame:
 
     return in0\
         .withColumn("_vector", col("openai_embedding"))\
-        .withColumn("_response", expr(f"pinecone_query(\"all-vectors\", _vector, {1})"))\
+        .withColumn("_response", expr(f"pinecone_query(\"all-vectors\", _vector, {3})"))\
         .withColumn("pinecone_matches", col("_response.matches"))\
         .withColumn("pinecone_error", col("_response.error"))\
         .drop("_vector", "_response")

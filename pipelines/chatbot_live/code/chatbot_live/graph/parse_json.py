@@ -9,6 +9,9 @@ from chatbot_live.udfs.UDFs import *
 
 def parse_json(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
-        col("key"), 
-        from_json(col("value"), "channel STRING, ts STRING, text STRING, source STRING").alias("value_parsed")
+        from_json(
+            col("event"), 
+            "struct<envelope_id:string,payload:struct<event:struct<text:string,ts:string,user:string,channel:string>>,type:string>"
+          )\
+          .alias("value_parsed")
     )

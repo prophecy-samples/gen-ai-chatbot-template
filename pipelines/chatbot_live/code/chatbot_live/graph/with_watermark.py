@@ -7,5 +7,5 @@ from prophecy.transpiler.fixed_file_schema import *
 from chatbot_live.config.ConfigStore import *
 from chatbot_live.udfs.UDFs import *
 
-def prepare_payload(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.select(col("channel"), col("ts"), col("openai_answer.choices")[0].alias("answer"))
+def with_watermark(spark: SparkSession, with_original_content: DataFrame) -> DataFrame:
+    return with_original_content.withWatermark("created_at", "1 second")

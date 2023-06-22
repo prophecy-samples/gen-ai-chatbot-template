@@ -13,7 +13,7 @@ def vectorize_question(spark: SparkSession, question_seed: DataFrame) -> DataFra
     OpenAiLLM(api_key = DBUtils(spark).secrets.get(scope = "open_ai", key = "token")).register_udfs(spark = spark)
 
     return question_seed\
-        .withColumn("_texts", array(col("value_parsed.text")))\
+        .withColumn("_texts", array(col("text")))\
         .withColumn("_embedded", expr("openai_embed_texts(_texts)"))\
         .withColumn("openai_embedding", expr("_embedded.embeddings[0]"))\
         .withColumn("openai_error", col("_embedded.error"))\

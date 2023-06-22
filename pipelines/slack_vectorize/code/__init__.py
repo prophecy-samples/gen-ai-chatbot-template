@@ -1,1 +1,0 @@
-from .slack_vectorize import *
