@@ -7,7 +7,7 @@ from prophecy.transpiler.fixed_file_schema import *
 from web_vectorize.config.ConfigStore import *
 from web_vectorize.udfs.UDFs import *
 
-def all_vectors_silver(spark: SparkSession, web_silver_content_vectorized_1: DataFrame):
+def vector_db(spark: SparkSession, web_silver_content_vectorized_1: DataFrame):
     from pyspark.sql.functions import expr, array, struct
     from spark_ai.dbs.pinecone import PineconeDB, IdVector
     from pyspark.dbutils import DBUtils

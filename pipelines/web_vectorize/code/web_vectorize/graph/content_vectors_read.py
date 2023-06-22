@@ -7,5 +7,5 @@ from prophecy.transpiler.fixed_file_schema import *
 from web_vectorize.config.ConfigStore import *
 from web_vectorize.udfs.UDFs import *
 
-def scrape_pages(spark: SparkSession, web_bronze_sitemap: DataFrame) -> DataFrame:
-    return web_bronze_sitemap.select(col("loc").alias("url"), scrape_text(col("loc")).alias("content"))
+def content_vectors_read(spark: SparkSession) -> DataFrame:
+    return spark.read.table(f"prophecy_data.web_silver.content_vectorized")

@@ -149,8 +149,8 @@
       "id" : "Mtip3jhyXDNbqxet97Llq$$7H-OL23RMVCDiGDRfdEO5",
       "component" : "Source",
       "metadata" : {
-        "label" : "web_bronze_url",
-        "slug" : "web_bronze_url",
+        "label" : "index_web_read",
+        "slug" : "index_web_read",
         "x" : 20,
         "y" : 80,
         "phase" : 0,
@@ -175,8 +175,8 @@
       "id" : "3u5ae5Hd2G3jtDNo3ixul$$Tbv3XnEyY9dIrxwVw1avt",
       "component" : "Target",
       "metadata" : {
-        "label" : "web_bronze_sitemap_raw",
-        "slug" : "web_bronze_sitemap_raw",
+        "label" : "index_web_text",
+        "slug" : "index_web_text",
         "x" : 440,
         "y" : 80,
         "phase" : 0,
@@ -294,8 +294,8 @@
       "id" : "-xIxAocyWrLdcxF3MQvLV$$yYTEJzO4XhzoErN7Jz-rF",
       "component" : "Target",
       "metadata" : {
-        "label" : "web_bronze_content_1",
-        "slug" : "web_bronze_content_1",
+        "label" : "web_content",
+        "slug" : "web_content",
         "x" : 440,
         "y" : 260,
         "phase" : 1,
@@ -343,8 +343,8 @@
       "id" : "8T5rDEgGsyVmI9WPbQM7y$$9Xwym8XoDv3xVomNVjpkM",
       "component" : "Source",
       "metadata" : {
-        "label" : "web_bronze_sitemap",
-        "slug" : "web_bronze_sitemap",
+        "label" : "index_urls",
+        "slug" : "index_urls",
         "x" : 20,
         "y" : 260,
         "phase" : 1,

@@ -4,10 +4,10 @@ from pyspark.sql.types import *
 from prophecy.libs import typed_lit
 from prophecy.transpiler import call_spark_fcn
 from prophecy.transpiler.fixed_file_schema import *
-from web_vectorize.config.ConfigStore import *
-from web_vectorize.udfs.UDFs import *
+from web_ingest.config.ConfigStore import *
+from web_ingest.udfs.UDFs import *
 
-def web_bronze_url(spark: SparkSession) -> DataFrame:
+def index_web_read(spark: SparkSession) -> DataFrame:
     from spark_ai.webapps import WebUtils
     WebUtils().register_udfs(spark)
     df1 = spark.range(1)

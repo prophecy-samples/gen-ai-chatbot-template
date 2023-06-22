@@ -9,22 +9,16 @@ from prophecy.transpiler.fixed_file_schema import *
 from web_vectorize.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_web_bronze_url = web_bronze_url(spark)
-    df_text_only = text_only(spark, df_web_bronze_url)
-    web_bronze_sitemap_raw(spark, df_text_only)
-    df_web_bronze_sitemap = web_bronze_sitemap(spark)
-    df_scrape_pages = scrape_pages(spark, df_web_bronze_sitemap)
-    web_bronze_content_1(spark, df_scrape_pages)
-    df_web_bronze_content = web_bronze_content(spark)
-    df_chunkify = chunkify(spark, df_web_bronze_content)
+    df_web_content = web_content(spark)
+    df_chunkify = chunkify(spark, df_web_content)
     df_flatten_content = flatten_content(spark, df_chunkify)
     df_with_id = with_id(spark, df_flatten_content)
     df_vectorize = vectorize(spark, df_with_id)
     df_clean = clean(spark, df_vectorize)
     df_rename = rename(spark, df_clean)
-    web_silver_content_vectorized(spark, df_rename)
-    df_web_silver_content_vectorized_read = web_silver_content_vectorized_read(spark)
-    all_vectors_silver(spark, df_web_silver_content_vectorized_read)
+    content_vectors(spark, df_rename)
+    df_content_vectors_read = content_vectors_read(spark)
+    vector_db(spark, df_content_vectors_read)
 
 def main():
     spark = SparkSession.builder\

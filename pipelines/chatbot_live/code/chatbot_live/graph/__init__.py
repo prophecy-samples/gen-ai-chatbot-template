@@ -7,8 +7,8 @@ from .explode_matches import explode_matches
 from .vectorize_question import vectorize_question
 from .bot_messages_target import bot_messages_target
 from .slack_chat import slack_chat
-from .web_silver_content_vectorized import web_silver_content_vectorized
 from .with_watermark import with_watermark
 from .with_original_content import with_original_content
 from .parse_json import parse_json
+from .content_vectors import content_vectors
 from .answer_question import answer_question

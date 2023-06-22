@@ -779,7 +779,7 @@
               }
             }, {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -902,8 +902,8 @@
       "id" : "vw0Wq4Jh8cr76-gysJcY1$$lFrSsMJCy8xzBwrsL0eBC",
       "component" : "Source",
       "metadata" : {
-        "label" : "web_silver_content_vectorized",
-        "slug" : "web_silver_content_vectorized",
+        "label" : "content_vectors",
+        "slug" : "content_vectors",
         "x" : 0,
         "y" : 100,
         "phase" : 0,
@@ -1019,7 +1019,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1846,7 +1846,7 @@
               }
             }, {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",

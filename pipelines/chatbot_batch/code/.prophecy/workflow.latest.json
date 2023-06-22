@@ -444,8 +444,8 @@
       "id" : "KQUutjdomgo8Y5F93g6TI$$vDeXXS8Bk4eorUana84Fd",
       "component" : "Source",
       "metadata" : {
-        "label" : "web_silver_content_vectorized",
-        "slug" : "web_silver_content_vectorized",
+        "label" : "content_vectors",
+        "slug" : "content_vectors",
         "x" : -1680,
         "y" : -140,
         "phase" : 0,
@@ -526,7 +526,7 @@
               }
             }, {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -945,7 +945,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "id",
-              "type" : "long",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
