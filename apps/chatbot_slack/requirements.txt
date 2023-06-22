@@ -1,3 +1,0 @@
-slack_bolt
-confluent_kafka
-python-dotenv
