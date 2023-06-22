@@ -10,7 +10,7 @@ from .scrape_pages import scrape_pages
 from .clean import clean
 from .web_bronze_sitemap import web_bronze_sitemap
 from .web_bronze_sitemap_raw import web_bronze_sitemap_raw
-from .FlattenSchema_1 import FlattenSchema_1
 from .web_bronze_url import web_bronze_url
+from .flatten_content import flatten_content
 from .web_silver_content_vectorized import web_silver_content_vectorized
 from .chunkify import chunkify

@@ -302,8 +302,8 @@
       "id" : "KDdSh9bbURjS42SmBsj1o$$uafUAcCUXfhuamTjN94Gg",
       "component" : "FlattenSchema",
       "metadata" : {
-        "label" : "FlattenSchema_1",
-        "slug" : "FlattenSchema_1",
+        "label" : "flatten_content",
+        "slug" : "flatten_content",
         "x" : 540,
         "y" : 120,
         "phase" : 2,
@@ -384,7 +384,7 @@
           "targetTokens" : [ "result_chunks" ],
           "target" : "content_chunk"
         } ],
-        "columnsSelector" : [ "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##result_chunks", "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##url" ],
+        "columnsSelector" : [ "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##url", "pgKIxJoBh7GmFiu9irHBF$$QPf0tJb5qVvo_WGVLuvL4##result_chunks" ],
         "explodeColumns" : [ ],
         "delimiter" : "-"
       }
