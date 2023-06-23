@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "2",
+    "fabricId" : "1777",
     "frontEndLanguage" : "sql",
     "mode" : "stream",
     "udfs" : {
@@ -38,13 +38,13 @@
       "type" : "pypi",
       "id" : "KfvmV",
       "name" : "Prophecy Spark AI (Python)",
-      "enabled" : false,
+      "enabled" : true,
       "package" : "prophecy-spark-ai==0.1.6"
     }, {
       "type" : "coordinates",
       "coordinates" : "io.prophecy:spark-ai_2.12:0.1.6",
       "name" : "Prophecy Spark AI",
-      "enabled" : false,
+      "enabled" : true,
       "id" : "xs0D8",
       "exclusions" : [ ]
     } ],

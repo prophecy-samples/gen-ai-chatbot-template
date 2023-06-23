@@ -10,7 +10,6 @@ buildSystemDetails:
   buildSystem: wheel
   author: null
   createdAt: '2023-06-13 00:50:07'
-  modifiedAt: '2023-06-13 00:50:07'
 pipelines:
   pipelines/web_vectorize:
     name: web_vectorize
@@ -20,7 +19,6 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 02:05:35'
-    modifiedAt: '2023-06-22 18:45:19'
     datasets:
       inputs:
       - datasets/web_bronze_content
@@ -38,7 +36,6 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-13 05:00:18'
-    modifiedAt: '2023-06-22 07:55:22'
     datasets:
       inputs:
       - datasets/question_seed
@@ -54,7 +51,6 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-22 05:25:43'
-    modifiedAt: '2023-06-22 18:51:38'
     datasets:
       inputs:
       - datasets/slack_chat
@@ -71,7 +67,6 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-06-22 05:27:53'
-    modifiedAt: '2023-06-22 23:38:04'
     datasets:
       inputs:
       - datasets/web_bronze_sitemap
@@ -87,7 +82,6 @@ datasets:
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 01:50:43'
-    modifiedAt: '2023-06-13 01:52:44'
     mode: batch
     physicalDatasets:
       dev_product:
@@ -96,13 +90,11 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-13 01:50:43'
-        modifiedAt: '2023-06-13 01:50:43'
   datasets/web_bronze_sitemap_raw:
     name: web_bronze_sitemap_raw
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 01:53:47'
-    modifiedAt: '2023-06-13 02:02:05'
     mode: batch
     physicalDatasets:
       dev_product:
@@ -111,13 +103,11 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-13 01:53:47'
-        modifiedAt: '2023-06-13 01:53:47'
   datasets/web_bronze_sitemap:
     name: web_bronze_sitemap
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 01:56:28'
-    modifiedAt: '2023-06-13 01:56:28'
     mode: batch
     physicalDatasets:
       dev_product:
@@ -126,13 +116,11 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-13 01:56:28'
-        modifiedAt: '2023-06-13 01:56:28'
   datasets/web_bronze_content:
     name: web_bronze_content
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 02:01:38'
-    modifiedAt: '2023-06-13 02:02:49'
     mode: batch
     physicalDatasets:
       dev_product:
@@ -141,13 +129,11 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-13 02:01:38'
-        modifiedAt: '2023-06-13 02:01:38'
   datasets/web_silver_content_vectorized:
     name: web_silver_content_vectorized
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 04:20:06'
-    modifiedAt: '2023-06-22 07:33:32'
     mode: batch
     physicalDatasets:
       dev_product:
@@ -156,13 +142,11 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-13 04:20:06'
-        modifiedAt: '2023-06-13 04:20:06'
   datasets/all_vectors_silver:
     name: all_vectors_silver
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 04:38:14'
-    modifiedAt: '2023-06-16 16:22:47'
     mode: batch
     physicalDatasets:
       dev_product:
@@ -171,13 +155,11 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-13 04:38:15'
-        modifiedAt: '2023-06-13 04:38:15'
   datasets/question_seed:
     name: question_seed
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-13 05:18:30'
-    modifiedAt: '2023-06-13 05:18:30'
     mode: batch
     physicalDatasets:
       dev_product:
@@ -186,13 +168,11 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-13 05:18:30'
-        modifiedAt: '2023-06-13 05:18:30'
   datasets/slack_chat:
     name: slack_chat
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-20 04:50:15'
-    modifiedAt: '2023-06-20 18:31:47'
     mode: stream
     physicalDatasets:
       dev_product:
@@ -201,13 +181,11 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-20 04:50:15'
-        modifiedAt: '2023-06-20 04:50:15'
   datasets/bot_messages_target:
     name: bot_messages_target
     description: ''
     author: maciej@prophecy.io
     createdAt: '2023-06-20 04:50:58'
-    modifiedAt: '2023-06-20 18:34:17'
     mode: stream
     physicalDatasets:
       dev_product:
@@ -216,13 +194,11 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-20 04:50:58'
-        modifiedAt: '2023-06-20 04:50:58'
 templates: {}
 jobs: {}
 functions:
   author: null
   createdAt: '2023-06-13 00:50:07'
-  modifiedAt: '2023-06-23 00:17:13'
   gems: {}
   udfs:
     udfs/scrape_text:
@@ -233,7 +209,6 @@ functions:
       outputs: []
       author: maciej@prophecy.io
       createdAt: '2022-12-15 18:04:50'
-      modifiedAt: '2022-12-15 18:04:50'
   udafs: {}
   expressions: {}
 subgraphs: {}
