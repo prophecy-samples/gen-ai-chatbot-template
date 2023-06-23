@@ -14,7 +14,8 @@ def pipeline(spark: SparkSession) -> None:
     index_web_text(spark, df_text_only)
     df_index_urls = index_urls(spark)
     df_scrape_pages = scrape_pages(spark, df_index_urls)
-    web_content(spark, df_scrape_pages)
+    df_clean_fields = clean_fields(spark, df_scrape_pages)
+    web_content(spark, df_clean_fields)
 
 def main():
     spark = SparkSession.builder\
