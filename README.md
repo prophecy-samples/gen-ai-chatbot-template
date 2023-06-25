@@ -39,41 +39,27 @@ Below is a platform recommendation. The template is entirely code-based and runs
 
 ### 1. Dependencies setup
 
-Ensure that above dependencies are satisfied. Create appropriate accounts on the services you want to use above and install required dependencies on your Spark cluster.
+Ensure that above dependencies are satisfied. Create appropriate accounts on the services you want to use above. After that, save the generated tokens within the `.env` file (you can base it on the `sample.env` file). 
 
 1. **Slack** - [quick video here](https://www.loom.com/share/2d7afeacd92e44809ab29b43665329dd?sid=c4e08d9d-bf86-4a6f-9e9d-fce9d7a12578) 
 
    1. [Setup Slack application](https://api.slack.com/reference/manifests#creating_apps) using the manifest file in [apps/slack/manifest.yml](apps/slack/manifest.yaml).
-   2. Generate App-Level Token with `connections:write` permission. This token is going to be used for receiving messages from Slack.
-   3. Find the Bot User OAuth Token. This token is going to be used for sending messages to Slack.<br><br>
+   2. Generate App-Level Token with `connections:write` permission. This token is going to be used for receiving messages from Slack. Save it as `SLACK_APP_TOKEN`.
+   3. Find the Bot User OAuth Token. This token is going to be used for sending messages to Slack. Save it as `SLACK_TOKEN`<br><br>
+   
+2. **OpenAI** - Create an account [here](https://platform.openai.com/signup) and generate an api key. Save it as `OPEN_AI_API_KEY`.
 
-### 2. Load the repository 
+3. **Pinecone** - Create an account [here](https://app.pinecone.io) and generate the api key. Save it as `PINECONE_TOKEN`.  
 
-Fork this repository to your personal GitHub account. Afterwards, create new project in Prophecy pointing to the forked repository 
+### 2. Setup Databricks secrets & schemas
+
+Ensure that your `.env` file contains all secrets and run `setup_databricks.sh` to create required secrets and schemas. 
+
+### 3. Load the repository 
+
+Fork this repository to your personal GitHub account. Afterward, create new project in Prophecy pointing to the forked repository. 
 
 [gif here]
-
-### 3. Setup credentials
-
-Configure the credentials to your Pinecone, OpenAI, Slack and/or Teams accounts on Databricks secrets. 
-
- ```bash
- # Execute below commands one by one
- # Setup the scope credentials for Slack connection 
- databricks secrets create-scope --scope slack
- # The App-Level goes here
- databricks secrets put --scope slack --key app_token
- # The Bot user OAuth token goes here
- databricks secrets put --scope slack --key token
-
- # Setup the scope credentials for Pinecone connection
- databricks secrets create-scope --scope pinecone
- databricks secrets put --scope pincone --key api_key
- 
- # Setup the scope credentials for OpenAI connection
- databricks secrets create-scope --scope openai
- databricks secrets put --scope openai --key token
- ```
 
 ### 4. Setup databases
 
