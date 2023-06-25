@@ -72,7 +72,7 @@ Fork this repository to your personal GitHub account. Afterward, create a new pr
 
 This project runs on Databrick's Unity Catalog by default. However, you can also reconfigure Source & Target gems to use alternative sources.
 
-For Databricks Unity Catalog, create the following catalog: `prophecy_data` and the following databases are required: `web_bronze` and `web_silver`. The tables are going to be created automatically on the first boot-up. 
+For Databricks Unity Catalog, create the following catalog: `gen_ai` and the following databases are required: `web_bronze` and `web_silver`. The tables are going to be created automatically on the first boot-up. 
 
 ### 5. Run the pipelines
 
