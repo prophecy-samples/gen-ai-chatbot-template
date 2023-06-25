@@ -8,4 +8,4 @@ from web_vectorize.config.ConfigStore import *
 from web_vectorize.udfs.UDFs import *
 
 def web_content(spark: SparkSession) -> DataFrame:
-    return spark.read.table(f"prophecy_data.web_bronze.content")
+    return spark.read.table(f"gen_ai.web_bronze.content")

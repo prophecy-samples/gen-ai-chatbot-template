@@ -1,3 +1,12 @@
 version: 1
 configurations:
 - default
+dependencies:
+- type: workflow
+  id: KfvmV
+  name: Prophecy Spark AI (Python)
+  enabled: true
+- type: workflow
+  id: xs0D8
+  name: Prophecy Spark AI
+  enabled: true

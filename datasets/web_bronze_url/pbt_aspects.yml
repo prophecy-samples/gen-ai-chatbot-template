@@ -17,7 +17,7 @@ schema:
       mappings: []
       tags: []
   - name: content
-    type: string
+    type: binary
     nullable: true
     metadata:
       description: ''

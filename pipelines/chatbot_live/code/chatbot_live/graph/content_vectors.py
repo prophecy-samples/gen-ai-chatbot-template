@@ -8,4 +8,4 @@ from chatbot_live.config.ConfigStore import *
 from chatbot_live.udfs.UDFs import *
 
 def content_vectors(spark: SparkSession) -> DataFrame:
-    return spark.read.table(f"prophecy_data.web_silver.content_vectorized")
+    return spark.read.table(f"gen_ai.web_silver.content_vectorized")

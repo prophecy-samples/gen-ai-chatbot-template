@@ -8,4 +8,4 @@ from web_ingest.config.ConfigStore import *
 from web_ingest.udfs.UDFs import *
 
 def text_only(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.select(col("content").alias("text"))
+    return in0.select(col("content").cast(StringType()).alias("text"))

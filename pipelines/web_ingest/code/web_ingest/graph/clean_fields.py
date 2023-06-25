@@ -7,11 +7,5 @@ from prophecy.transpiler.fixed_file_schema import *
 from web_ingest.config.ConfigStore import *
 from web_ingest.udfs.UDFs import *
 
-def index_web_read(spark: SparkSession) -> DataFrame:
-    from spark_ai.webapps import WebUtils
-    WebUtils().register_udfs(spark)
-    df1 = spark.range(1)
-
-    return df1\
-        .withColumn("url", lit("https://docs.prophecy.io/sitemap.xml"))\
-        .withColumn("content", expr("web_scrape(url)"))
+def clean_fields(spark: SparkSession, web_bronze_sitemap: DataFrame) -> DataFrame:
+    return web_bronze_sitemap.select(col("loc").alias("url"), col("result_content").alias("content"))

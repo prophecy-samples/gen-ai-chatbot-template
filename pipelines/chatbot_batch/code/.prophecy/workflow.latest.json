@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "2",
+    "fabricId" : "1777",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -34,7 +34,20 @@
     "hadoopConf" : [ ],
     "codeMode" : "sparse",
     "buildSystem" : "maven",
-    "externalDependencies" : [ ],
+    "externalDependencies" : [ {
+      "type" : "pypi",
+      "id" : "KfvmV",
+      "name" : "Prophecy Spark AI (Python)",
+      "enabled" : false,
+      "package" : "prophecy-spark-ai==0.1.7"
+    }, {
+      "type" : "coordinates",
+      "coordinates" : "io.prophecy:spark-ai_2.12:0.1.7",
+      "name" : "Prophecy Spark AI",
+      "enabled" : false,
+      "id" : "xs0D8",
+      "exclusions" : [ ]
+    } ],
     "dependentProjectExternalDependencies" : [ ],
     "isImported" : false,
     "interimMode" : "Full",
@@ -103,7 +116,7 @@
       "metadata" : {
         "label" : "vectorize_question",
         "slug" : "vectorize_question",
-        "x" : -2080,
+        "x" : -2120,
         "y" : -400,
         "phase" : 0,
         "cache" : false,
@@ -183,6 +196,7 @@
         "qa_context_column_name" : null,
         "credential_db_key" : "token",
         "limit" : "10",
+        "qa_template" : "Answer the question based on the context below.\nContext:\n```\n{context}\n```\nQuestion: \n```\n{query}\n```\nAnswer:\n",
         "group_data" : true
       }
     },
@@ -192,7 +206,7 @@
       "metadata" : {
         "label" : "answer_question",
         "slug" : "answer_question",
-        "x" : -1120,
+        "x" : -1100,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -472,7 +486,7 @@
       "metadata" : {
         "label" : "collect_context",
         "slug" : "collect_context",
-        "x" : -1320,
+        "x" : -1300,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -609,7 +623,7 @@
       "metadata" : {
         "label" : "extract_answer",
         "slug" : "extract_answer",
-        "x" : -940,
+        "x" : -880,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -697,7 +711,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer.choices", "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer" ]
+        "columnsSelector" : [ "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer", "XLdCZfixPrK6JzfbkLhrS$$5AiJJqhp0MBs63IWJLM7y##openai_answer.choices" ]
       }
     },
     "U-lC_dNhzQaQlvCkjN_Wd$$2pVjg-KnXiU3z6Er0HlFx" : {
@@ -732,7 +746,7 @@
       "metadata" : {
         "label" : "vector_lookup",
         "slug" : "vector_lookup",
-        "x" : -1860,
+        "x" : -1900,
         "y" : -400,
         "phase" : 0,
         "cache" : false,
