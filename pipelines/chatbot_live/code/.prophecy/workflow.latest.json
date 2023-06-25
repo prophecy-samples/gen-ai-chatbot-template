@@ -1266,7 +1266,7 @@
         "operation" : "embed_texts",
         "embed_text_column_name" : "text",
         "qa_context_column_name" : null,
-        "credential_db_key" : "token",
+        "credential_db_key" : "api_key",
         "limit" : "10",
         "qa_template" : "Answer the question based on the context below.\nContext:\n```\n{context}\n```\nQuestion: \n```\n{query}\n```\nAnswer:\n",
         "group_data" : false
