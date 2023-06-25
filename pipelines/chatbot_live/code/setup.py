@@ -7,7 +7,7 @@ setup(
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
     install_requires = [
-'prophecy-spark-ai==0.1.6', 'prophecy-libs==1.5.5'],
+'prophecy-spark-ai==0.1.7', 'prophecy-libs==1.5.5'],
     entry_points = {
 'console_scripts' : [
 'main = chatbot_live.pipeline:main'], },

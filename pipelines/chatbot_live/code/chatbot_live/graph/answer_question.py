@@ -10,7 +10,7 @@ from chatbot_live.udfs.UDFs import *
 def answer_question(spark: SparkSession, Aggregate_1: DataFrame) -> DataFrame:
     from spark_ai.llms.openai import OpenAiLLM
     from pyspark.dbutils import DBUtils
-    OpenAiLLM(api_key = DBUtils(spark).secrets.get(scope = "open_ai", key = "token")).register_udfs(spark = spark)
+    OpenAiLLM(api_key = DBUtils(spark).secrets.get(scope = "open_ai", key = "api_key")).register_udfs(spark = spark)
 
     return Aggregate_1\
         .withColumn("_context", col("content_chunk"))\

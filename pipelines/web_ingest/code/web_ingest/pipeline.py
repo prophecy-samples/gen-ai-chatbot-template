@@ -9,8 +9,8 @@ from prophecy.transpiler.fixed_file_schema import *
 from web_ingest.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_index_web_read = index_web_read(spark)
-    df_text_only = text_only(spark, df_index_web_read)
+    df_web_bronze_url = web_bronze_url(spark)
+    df_text_only = text_only(spark, df_web_bronze_url)
     index_web_text(spark, df_text_only)
     df_index_urls = index_urls(spark)
     df_scrape_pages = scrape_pages(spark, df_index_urls)

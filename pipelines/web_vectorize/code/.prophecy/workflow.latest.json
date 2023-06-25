@@ -39,10 +39,10 @@
       "id" : "KfvmV",
       "name" : "Prophecy Spark AI (Python)",
       "enabled" : true,
-      "package" : "prophecy-spark-ai==0.1.6"
+      "package" : "prophecy-spark-ai==0.1.7"
     }, {
       "type" : "coordinates",
-      "coordinates" : "io.prophecy:spark-ai_2.12:0.1.6",
+      "coordinates" : "io.prophecy:spark-ai_2.12:0.1.7",
       "name" : "Prophecy Spark AI",
       "enabled" : true,
       "id" : "xs0D8",
@@ -418,7 +418,7 @@
         "operation" : "embed_texts",
         "embed_text_column_name" : "content_chunk",
         "qa_context_column_name" : null,
-        "credential_db_key" : "token",
+        "credential_db_key" : "api_key",
         "limit" : "10",
         "qa_template" : "Answer the question based on the context below.\nContext:\n```\n{context}\n```\nQuestion: \n```\n{query}\n```\nAnswer:\n",
         "group_data" : true

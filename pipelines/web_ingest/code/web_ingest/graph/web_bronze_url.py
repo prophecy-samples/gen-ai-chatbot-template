@@ -7,7 +7,7 @@ from prophecy.transpiler.fixed_file_schema import *
 from web_ingest.config.ConfigStore import *
 from web_ingest.udfs.UDFs import *
 
-def index_web_read(spark: SparkSession) -> DataFrame:
+def web_bronze_url(spark: SparkSession) -> DataFrame:
     from spark_ai.webapps import WebUtils
     WebUtils().register_udfs(spark)
     df1 = spark.range(1)
