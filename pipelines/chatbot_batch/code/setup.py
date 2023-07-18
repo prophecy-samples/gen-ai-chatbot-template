@@ -7,7 +7,7 @@ setup(
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
     install_requires = [
-'prophecy-libs==1.5.5'],
+'prophecy-libs==1.5.6'],
     entry_points = {
 'console_scripts' : [
 'main = chatbot_batch.pipeline:main'], },

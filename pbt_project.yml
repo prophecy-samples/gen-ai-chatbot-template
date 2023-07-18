@@ -223,9 +223,9 @@ dependencies:
   id: KfvmV
   name: Prophecy Spark AI (Python)
   enabled: false
-  package: prophecy-spark-ai==0.1.7
+  package: prophecy-spark-ai==0.1.8
 - type: coordinates
-  coordinates: io.prophecy:spark-ai_2.12:0.1.7
+  coordinates: io.prophecy:spark-ai_2.12:0.1.8
   name: Prophecy Spark AI
   enabled: false
   id: xs0D8
