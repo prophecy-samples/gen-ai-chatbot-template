@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Exit if any command fails
-set -e
-
 # Check if databricks-cli is installed
 if ! command -v databricks &> /dev/null
 then
@@ -43,4 +40,4 @@ databricks --profile "$PROFILE" secrets put --scope open_ai --key api_key --stri
 
 # Setup secrets for Pinecone
 databricks --profile "$PROFILE" secrets create-scope --scope pinecone
-databricks --profile "$PROFILE" secrets put --scope slack --key token --string-value "$PINECONE_TOKEN"
+databricks --profile "$PROFILE" secrets put --scope pinecone --key token --string-value "$PINECONE_TOKEN"

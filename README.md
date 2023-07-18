@@ -1,17 +1,20 @@
-# Generative-AI Chatbot
+# Generative-AI Chatbot in Spark
 
-This project showcases how easy it is to build a live chatbot application using your internal datasets. Here's a quick video showcasing the result: [Demo here](https://www.loom.com/share/a89ee52de80e41abb9b5647c1da73e18?sid=6fcf0298-79e8-412b-8e48-f58c9d6d7f3b). 
+This project showcases how easy it is to build a live chatbot application using your internal datasets on Spark. It features two main components: 
 
-It features two main components: 
-
-1. **batch ingestion** - loads unstructured data from your applications, pre-process, vectorizes it, stores it within your vector database of choice
-2. **live inference** - a streaming pipeline that reads messages from Slack (soon also Teams) and answers them live using gathered knowledge. 
+1. **batch ingestion** - set of Spark pipelines that ingest unstructured data from your applications, pre-process, vectorizes it, store it within your vector database of choice
+2. **live inference** - a Spark streaming pipeline that reads messages from Slack (soon also Teams) and answers them live using gathered knowledge.
 
 <br>
 
 <img width="1440" alt="container" src="https://github.com/prophecy-samples/gen-ai-chatbot-template/assets/3248329/c5f49bd5-5b4b-4c51-b050-e4e0ddf4f8e0">
 
 <br>
+
+This template works best with [Databricks](https://databricks.com/) and [Prophecy](https://www.prophecy.io/). However, you can run it on any Spark. Spark allows us to easily scale and operationalize our chatbot to big datasets and large user bases, and Prophecy allows for easy development and debugging of the pipelines. 
+
+![gen-ai-chatbot-template-streaming](https://github.com/prophecy-samples/gen-ai-chatbot-template/assets/3248329/6fe672cb-5b60-4323-9380-de364afbce95)
+
 
 ## Requirements 
 
@@ -32,7 +35,7 @@ Required:
 
 ### Platform recommendations:
 
-Below is a platform recommendation. The template is entirely code-based and runs on open-source projects like Spark. 
+Below is a platform recommendation. The template is entirely code-based and also runs on open-source projects like Spark. 
 
 1. [**Prophecy Low-Code**](https://www.prophecy.io/) (version 3.1 and above) - for building the data pipelines. A free account is available.
 2. [**Databricks**](https://databricks.com/) (DBR 12.2 ML and above) - for running the data pipelines. A free community edition is available, or Prophecy provides Databricks' free trial. 
@@ -69,7 +72,7 @@ Fork this repository to your personal GitHub account. Afterward, create a new pr
 
 This project runs on Databrick's Unity Catalog by default. However, you can also reconfigure Source & Target gems to use alternative sources.
 
-For Databricks Unity Catalog, create the following catalog: `prophecy_data` and the following databases are required: `web_bronze` and `web_silver`. The tables are going to be created automatically on the first boot-up. 
+For Databricks Unity Catalog, create the following catalog: `gen_ai` and the following databases are required: `web_bronze` and `web_silver`. The tables are going to be created automatically on the first boot-up. 
 
 ### 5. Run the pipelines
 
