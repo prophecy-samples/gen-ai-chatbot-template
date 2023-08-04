@@ -29,8 +29,14 @@ def main():
     Utils.initializeFromArgs(spark, parse_args())
     spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/chatbot_batch")
     registerUDFs(spark)
-    
-    MetricsCollector.start(spark = spark, pipelineId = "pipelines/chatbot_batch")
+
+    try:
+        
+        MetricsCollector.start(spark = spark, pipelineId = "pipelines/chatbot_batch", config = Config)
+    except :
+        
+        MetricsCollector.start(spark = spark, pipelineId = "pipelines/chatbot_batch")
+
     pipeline(spark)
     MetricsCollector.end(spark)
 

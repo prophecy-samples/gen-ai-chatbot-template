@@ -7,7 +7,7 @@ setup(
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
     install_requires = [
-'prophecy-spark-ai==0.1.8', 'prophecy-libs==1.5.6'],
+'prophecy-spark-ai==0.1.8', 'prophecy-libs==1.5.9'],
     entry_points = {
 'console_scripts' : [
 'main = web_ingest.pipeline:main'], },
