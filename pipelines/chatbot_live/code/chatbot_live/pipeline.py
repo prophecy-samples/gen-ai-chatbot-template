@@ -34,8 +34,14 @@ def main():
     Utils.initializeFromArgs(spark, parse_args())
     spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/chatbot_live")
     registerUDFs(spark)
-    
-    MetricsCollector.start(spark = spark, pipelineId = "pipelines/chatbot_live")
+
+    try:
+        
+        MetricsCollector.start(spark = spark, pipelineId = "pipelines/chatbot_live", config = Config)
+    except :
+        
+        MetricsCollector.start(spark = spark, pipelineId = "pipelines/chatbot_live")
+
     pipeline(spark)
     
     spark.streams.resetTerminated()

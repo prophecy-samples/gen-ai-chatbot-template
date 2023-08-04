@@ -1,8 +1,9 @@
 {
   "metainfo" : {
     "id" : "1",
+    "uri" : "pipelines/web_ingest",
     "language" : "python",
-    "fabricId" : "1777",
+    "fabricId" : "3698",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -103,7 +104,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Start: ingest web data from Prophecy's documentation."
       },
       "ports" : {
         "inputs" : [ ],
@@ -129,7 +131,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Get the text content only from the web data"
       },
       "ports" : {
         "inputs" : [ {
@@ -201,7 +204,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Write the text data to a file on DBFS"
       },
       "ports" : {
         "inputs" : [ {
@@ -241,7 +245,8 @@
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Rename and select columns"
       },
       "ports" : {
         "inputs" : [ {
@@ -315,7 +320,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "eiR3MvyKSzKiZbH_YyHsk$$7ID2ovwLy1MWi-Zmuk7yK##loc", "eiR3MvyKSzKiZbH_YyHsk$$7ID2ovwLy1MWi-Zmuk7yK##result_content" ]
+        "columnsSelector" : [ "eiR3MvyKSzKiZbH_YyHsk$$7ID2ovwLy1MWi-Zmuk7yK##result_content", "eiR3MvyKSzKiZbH_YyHsk$$7ID2ovwLy1MWi-Zmuk7yK##loc" ]
       }
     },
     "-xIxAocyWrLdcxF3MQvLV$$yYTEJzO4XhzoErN7Jz-rF" : {
@@ -329,7 +334,8 @@
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "End: nicely formatted web content in a Unity Catalog table. "
       },
       "ports" : {
         "inputs" : [ {
@@ -378,7 +384,8 @@
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Read the sitemap text file as an XML file"
       },
       "ports" : {
         "inputs" : [ ],

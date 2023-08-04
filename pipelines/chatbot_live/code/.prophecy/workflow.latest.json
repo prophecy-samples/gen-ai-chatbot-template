@@ -1,8 +1,9 @@
 {
   "metainfo" : {
     "id" : "1",
+    "uri" : "pipelines/chatbot_live",
     "language" : "python",
-    "fabricId" : "1777",
+    "fabricId" : "1609",
     "frontEndLanguage" : "sql",
     "mode" : "stream",
     "udfs" : {
@@ -151,7 +152,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Send question and relevant document IDs in a prompt to OpenAI and receive an answer."
       },
       "ports" : {
         "inputs" : [ {
@@ -398,7 +400,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "We want to keep only the questions asked by the users; Filter out messages from the Slack App. Be sure to update the MemberID for your Slack App. See the documentation for details."
       },
       "ports" : {
         "inputs" : [ {
@@ -508,7 +511,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload.event", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload.event.user", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed" ],
+        "columnsSelector" : [ "Kzg8vCV1NW5VZdx3CF8Ou$$P9_92B44k71HE7AY1AjR5##value_parsed.payload.event.user", "Kzg8vCV1NW5VZdx3CF8Ou$$P9_92B44k71HE7AY1AjR5##value_parsed.payload", "Kzg8vCV1NW5VZdx3CF8Ou$$P9_92B44k71HE7AY1AjR5##value_parsed", "Kzg8vCV1NW5VZdx3CF8Ou$$P9_92B44k71HE7AY1AjR5##value_parsed.payload.event" ],
         "condition" : {
           "format" : "sql",
           "expression" : "value_parsed is not null and value_parsed.payload.event.user != 'U05AU1K4ELV'"
@@ -864,7 +867,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Write the answer in a Slack thread."
       },
       "ports" : {
         "inputs" : [ {
@@ -948,7 +952,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Get content for the relevant document IDs."
       },
       "ports" : {
         "inputs" : [ {
@@ -1092,19 +1097,19 @@
         } ],
         "expressions" : [ ],
         "hints" : [ {
-          "id" : "0xOGwWrOXDVMNK7bQ3BLU$$xliOeF-GR7pgpoYxhEx8N",
+          "id" : "DEVwVDMCH0PCFyVnlzCer$$Wsq5b3A71RPvwKuIorveS",
           "alias" : "in0",
           "hintType" : "none",
           "propagateColumns" : false
         }, {
-          "id" : "Qy_Tu3BDaSxM1ka8Y-ENO$$U0cPsnsYy5-j2T407eOYC",
+          "id" : "cDEjoExts_QYRP4V5Tkh8$$8f-5D3IyHie_vrCiUU1HJ",
           "alias" : "in1",
           "hintType" : "none",
           "propagateColumns" : false
         } ],
         "allIn1" : null,
         "activeTab" : "conditions",
-        "columnsSelector" : [ "0xOGwWrOXDVMNK7bQ3BLU$$xliOeF-GR7pgpoYxhEx8N##pinecone_matches.id", "0xOGwWrOXDVMNK7bQ3BLU$$xliOeF-GR7pgpoYxhEx8N##pinecone_matches", "Qy_Tu3BDaSxM1ka8Y-ENO$$U0cPsnsYy5-j2T407eOYC##id" ],
+        "columnsSelector" : [ "DEVwVDMCH0PCFyVnlzCer$$Wsq5b3A71RPvwKuIorveS##pinecone_matches.id", "DEVwVDMCH0PCFyVnlzCer$$Wsq5b3A71RPvwKuIorveS##pinecone_matches", "cDEjoExts_QYRP4V5Tkh8$$8f-5D3IyHie_vrCiUU1HJ##id" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
@@ -1121,7 +1126,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Create an embedding vector for the question. "
       },
       "ports" : {
         "inputs" : [ {
@@ -1283,7 +1289,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Formatting for the DocumentIDs."
       },
       "ports" : {
         "inputs" : [ {
@@ -1464,7 +1471,7 @@
           "targetTokens" : [ "created_at" ],
           "target" : "created_at"
         } ],
-        "columnsSelector" : [ "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##created_at", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##ts", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##channel", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##text", "oF3E_Le9ymt8baUD1xk4h$$03ULqZ1IJa13OOaIKqWxb##pinecone_matches" ],
+        "columnsSelector" : [ "R9XevMmU-_GiCYnf4mdHK$$vzSQO08Se9IiADDg61VMN##ts", "R9XevMmU-_GiCYnf4mdHK$$vzSQO08Se9IiADDg61VMN##created_at", "R9XevMmU-_GiCYnf4mdHK$$vzSQO08Se9IiADDg61VMN##pinecone_matches", "R9XevMmU-_GiCYnf4mdHK$$vzSQO08Se9IiADDg61VMN##channel", "R9XevMmU-_GiCYnf4mdHK$$vzSQO08Se9IiADDg61VMN##text" ],
         "explodeColumns" : [ ],
         "delimiter" : "-"
       }
@@ -1534,7 +1541,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Ingest messages from Slack. Double check the Databricks scope and key are correct for your setup. "
       },
       "ports" : {
         "inputs" : [ ],
@@ -1560,7 +1568,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Find documentIDs that are similar to the question, according to the vector embeddings."
       },
       "ports" : {
         "inputs" : [ {
