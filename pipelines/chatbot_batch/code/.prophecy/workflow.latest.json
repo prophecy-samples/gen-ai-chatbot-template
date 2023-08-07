@@ -1,8 +1,9 @@
 {
   "metainfo" : {
     "id" : "1",
+    "uri" : "pipelines/chatbot_batch",
     "language" : "python",
-    "fabricId" : "1777",
+    "fabricId" : "1609",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -121,7 +122,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Create an embedding for the question."
       },
       "ports" : {
         "inputs" : [ {
@@ -211,7 +213,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Send question and relevant document IDs in a prompt to OpenAI and receive an answer. "
       },
       "ports" : {
         "inputs" : [ {
@@ -628,7 +631,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "End: write the answer"
       },
       "ports" : {
         "inputs" : [ {
@@ -725,7 +729,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Start: ingest messages from a question seed."
       },
       "ports" : {
         "inputs" : [ ],
@@ -751,7 +756,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Find document IDs that are similar to the question."
       },
       "ports" : {
         "inputs" : [ {
@@ -902,7 +908,8 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Get content for the relevant document IDs"
       },
       "ports" : {
         "inputs" : [ {
@@ -1031,7 +1038,7 @@
         } ],
         "allIn1" : null,
         "activeTab" : "conditions",
-        "columnsSelector" : [ "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH##pinecone_matches.id", "IWidGeMaIMdSp5wfejxe_$$33NpMaNxK2Rks9BMvBl7g##id", "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH##pinecone_matches" ],
+        "columnsSelector" : [ "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH##pinecone_matches.id", "j4DyDVlkMpu4ngARktzSW$$iCMjFAKYYkK09ppvsp2ZH##pinecone_matches", "IWidGeMaIMdSp5wfejxe_$$33NpMaNxK2Rks9BMvBl7g##id" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"

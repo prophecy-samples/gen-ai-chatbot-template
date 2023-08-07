@@ -1,6 +1,6 @@
 name: gen-ai-chatbot-template
 description: ''
-version: 0.0.1
+version: 0.1.0
 author: maciej@prophecy.io
 language: python
 buildSystem: ''

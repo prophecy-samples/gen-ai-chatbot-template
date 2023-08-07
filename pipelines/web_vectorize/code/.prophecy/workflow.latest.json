@@ -1,8 +1,9 @@
 {
   "metainfo" : {
     "id" : "1",
+    "uri" : "pipelines/web_vectorize",
     "language" : "python",
-    "fabricId" : "1777",
+    "fabricId" : "3698",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -121,7 +122,8 @@
         "phase" : 3,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "This is the same Gem as above, the vector embeddings stored in UnityCatalog."
       },
       "ports" : {
         "inputs" : [ ],
@@ -147,7 +149,8 @@
         "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : ""
       },
       "ports" : {
         "inputs" : [ {
@@ -238,7 +241,8 @@
         "phase" : 3,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "End: write the web documentation chunk, ID, and embedding to a vector database like Pinecone. "
       },
       "ports" : {
         "inputs" : [ {
@@ -309,7 +313,8 @@
         "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Compute a text embedding for each document chunk."
       },
       "ports" : {
         "inputs" : [ {
@@ -435,7 +440,8 @@
         "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Write the web documentation chunk, ID, and embedding to a Unity Catalog table. "
       },
       "ports" : {
         "inputs" : [ {
@@ -506,7 +512,8 @@
         "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Add an ID column for each document chunk."
       },
       "ports" : {
         "inputs" : [ {
@@ -583,7 +590,8 @@
         "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : ""
       },
       "ports" : {
         "inputs" : [ {
@@ -652,7 +660,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q##url", "7qsBemszzVet_GoqfgaoN$$EdIXSyIkm_xMoGET6PB8q##openai_error" ],
         "condition" : {
           "format" : "sql",
           "expression" : "openai_error is null and instr(url, '/tags') = 0"
@@ -670,7 +678,8 @@
         "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : ""
       },
       "ports" : {
         "inputs" : [ {
@@ -771,7 +780,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ ]
+        "columnsSelector" : [ "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##id", "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##content_chunk", "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##url", "rOc4kkJi1qCQ3ZMRusEt0$$LChsDYnwHaQOs_dUR3gUN##openai_embedding" ]
       }
     },
     "7cXG5RvQdO6aRXdSLYQZ4$$qKbLiZXWw0p5NbdD7Ro7H" : {
@@ -785,7 +794,8 @@
         "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Start: nicely formatted web content in Unity Catalog."
       },
       "ports" : {
         "inputs" : [ ],
@@ -811,7 +821,8 @@
         "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Some web pages are too long, so split them into 1000 character chunks."
       },
       "ports" : {
         "inputs" : [ {
