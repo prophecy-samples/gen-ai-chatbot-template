@@ -757,7 +757,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Find document Ids that are similar to the question."
+        "comment" : "Find document IDs that are similar to the question."
       },
       "ports" : {
         "inputs" : [ {
