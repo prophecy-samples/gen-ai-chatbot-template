@@ -80,8 +80,3 @@ You can check out the end result on the [video here](https://www.loom.com/share/
 
 
 
-
-
-*** Release notes for version: 0.1.0 ***
-
-added comments to the gems for user clarity
