@@ -12,7 +12,7 @@ def vector_db(spark: SparkSession, web_silver_content_vectorized_1: DataFrame):
     from pyspark.dbutils import DBUtils
     PineconeDB(DBUtils(spark).secrets.get(scope = "pinecone", key = "token"), "us-east-1-aws").register_udfs(spark)
 
-    if spark.catalog.tableExists(f"prophecy_data.operational.pinecone_vectors_upsert_status"):
+    if spark.catalog.tableExists(f"gen_ai.operational.pinecone_vectors_upsert_status"):
         web_silver_content_vectorized_1\
             .withColumn("_row_num", row_number().over(Window.partitionBy().orderBy(col("id"))))\
             .withColumn("_group_num", ceil(col("_row_num") / 20))\
@@ -24,7 +24,7 @@ def vector_db(spark: SparkSession, web_silver_content_vectorized_1: DataFrame):
             .select(col("id_vectors"), col("count"), col("error"))\
             .write\
             .format("delta")\
-            .insertInto(f"prophecy_data.operational.pinecone_vectors_upsert_status")
+            .insertInto(f"gen_ai.operational.pinecone_vectors_upsert_status")
     else:
         web_silver_content_vectorized_1\
             .withColumn("_row_num", row_number().over(Window.partitionBy().orderBy(col("id"))))\
@@ -38,4 +38,4 @@ def vector_db(spark: SparkSession, web_silver_content_vectorized_1: DataFrame):
             .write\
             .format("delta")\
             .mode("overwrite")\
-            .saveAsTable(f"prophecy_data.operational.pinecone_vectors_upsert_status")
+            .saveAsTable(f"gen_ai.operational.pinecone_vectors_upsert_status")

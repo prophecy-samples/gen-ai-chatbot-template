@@ -10,4 +10,4 @@ def index_web_text(spark: SparkSession, in0: DataFrame):
     in0.write\
         .format("text")\
         .mode("overwrite")\
-        .text("dbfs:/prophecy_data/web/bronze/sitemap/", compression = None, lineSep = None)
+        .text("dbfs:/gen_ai/web/bronze/sitemap/", compression = None, lineSep = None)
